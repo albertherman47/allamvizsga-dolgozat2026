@@ -1,0 +1,1457 @@
+{
+  "curriculum": {
+    "program": "Gazdasági informatika",
+    "academic_year": "2025/26"
+  },
+  "courses": [
+    {
+      "code": "CBEM0311",
+      "name_hu": "Matematika",
+      "name_ro": "Matematică",
+      "name_en": "Mathematics",
+      "credits": 5,
+      "year": 1,
+      "semester": 1,
+      "category": "DF",
+      "course_type": "DOB",
+      "lecture_hours": 2,
+      "seminar_hours": 2,
+      "lab_hours": 0,
+      "project_hours": 0,
+      "exam_type": "E",
+      "learning_outcomes": {
+        "knowledge": [
+          "Studentul/Absolventul operează cu concepte, indicatori, modele, instrumente și metode matematice în vederea analizei și optimizării proceselor manageriale în corelație cu mediul organizației",
+          "Studentul/Absolventul utilizează elemente de matematici financiare, optimizarea funcțiilor de mai multe variabile, prognoza evoluției în timp a indicatorilor economici, modelarea probabilistă a fenomenelor economice care se desfășoară în condiții de risc și incertitudine, evaluarea indicatorilor statistici care caracterizează un fenomen economic, estimarea parametrilor unui model",
+          "Studentul/Absolventul identifică, diferențiază și analizează coerent în privința definirii conceptelor, modelelor și metodelor cantitative necesare în procesul decizional din cadrul organizațiilor"
+        ],
+        "skills": [
+          "Studentul/Absolventul modelează un proces economic și a factorilor determinanți ai acestuia utilizând funcții de mai multe variabile",
+          "Studentul/Absolventul utilizează algoritmi matematici pentru determinarea soluției optime a unei probleme de maximizare sau minimizare a unei funcții care modelează un indicator de rezultat",
+          "Studentul/Absolventul modelează probabilist scenariile de evoluție a unui fenomen economic, evaluează rezultatul asociat fiecărui scenariu și estimează a rezultatul așteptat pe baza scenariilor identificate, utilizând caracteristici numerice ale variabilelor aleatoare (valoare medie, dispersie, coeficient de corelație)",
+          "Studentul/Absolventul analizează date, estimează parametrii unui model statistic și fundamentează decizia managerială pe baza acestora",
+          "Studentul/Absolventul cuantifică valoarea în timp a unui flux de capital, utilizând modele de matematici financiare"
+        ],
+        "responsibility_autonomy": [
+          "Studentul/Absolventul utilizează autonom metodele de analiză cantitativă și tehnici avansate de calcul pentru evaluarea rezultatului și a impactului factorilor determinanți în problemele complexe de natură economico-managerială din practica organizațiilor",
+          "Studentul/Absolventul aplică cu responsabilitate metodele matematice de prognoză și a algoritmilor de optimizare a deciziilor privind funcționarea organizației",
+          "Studentul/Absolventul fundamentează științific a deciziile manageriale, pe baza utilizării instrumentelor de modelare probabilistă, analiză statistică, estimare a rezultatelor așteptate și optimizare a indicatorilor de rezultat"
+        ]
+      }
+    },
+    {
+      "code": "CBGG0761",
+      "name_hu": "Gazdaság alapjai",
+      "name_ro": "Bazele economiei",
+      "name_en": "Fundamentals of Economics",
+      "credits": 4,
+      "year": 1,
+      "semester": 1,
+      "category": "DF",
+      "course_type": "DOB",
+      "lecture_hours": 2,
+      "seminar_hours": 0,
+      "lab_hours": 2,
+      "project_hours": 0,
+      "exam_type": "E",
+      "learning_outcomes": {
+        "knowledge": [
+          "Studentul/Absolventul recunoaște relevanța principiilor fundamentale ale microeconomiei și macroeconomiei, modele economice, noțiuni de economie aplicată",
+          "Studentul/Absolventul recunoaște relevanța teoriilor fundamentale ale microeconomiei, înțelegerea mecanismelor de derulare a activității economice, a modului de luare a deciziilor, a comportamentelor individuale ale agenților economici, înțelegerea mecanismului pieței, a formării echilibrelor în diferite situații de concurență",
+          "Studentul/Absolventul identifică constructe teoretice care permit înțelegerea sintetică, analitică și critică a interacțiunilor și corelațiilor care se formează între agenții economici la nivel agregat precum și a indicatorilor care evaluează efectele acestor interacțiuni",
+          "Studentul/Absolventul recunoaște relevanța teoriilor, conceptelor și instrumentarului necesar analizei formelor de manifestare a dezechilibrelor macroeconomice, precum și a metodelor eficiente de prevenire"
+        ],
+        "skills": [
+          "Studentul/Absolventul analizează și interpretează fenomenele economice",
+          "Studentul/Absolventul analizează cauzele problemelor economice și implementarea soluțiilor adecvate",
+          "Studentul/Absolventul aplică și interpretează datele economice: utilizarea instrumentelor statistice și econometrice pentru a interpreta datele",
+          "Studentul/Absolventul fundamentează științific deciziile economice la nivel micro/macroeconomic",
+          "Studentul/Absolventul utilizează teoriile și indicatorii macroeconomici în scopul analizei evoluției globale a unei economii și elaborării unor scenarii privind evoluția viitoare a acesteia",
+          "Studentul/Absolventul aplică teoriile macroeconomice pentru analiza cauzelor și efectelor dezechilibrelor macroeconomice specifice (precum inflația, șomajul, deficitele) și evaluează politicile economice care contribuie la apariția sau soluționarea acestor fenomene"
+        ],
+        "responsibility_autonomy": [
+          "Studentul/Absolventul manifestă o atitudine proactivă și responsabilă în fundamentarea științifică și adoptarea deciziilor economice",
+          "Studentul/Absolventul acționează coerent în vederea elaborării lucrărilor de analiză economică, și a interpretărilor privind funcționarea organizației",
+          "Studentul/Absolventul realizează cu responsabilitate studii/lucrări privind funcționarea sistemului economic",
+          "Studentul/Absolventul fundamentează, elaborează și implementează cu responsabilitate strategii și politici economice pentru organizații sau la nivel macroeconomic",
+          "Studentul/Absolventul acționează coerent în vederea elaborării proiectelor care presupun măsurarea evoluției fenomenelor economice la nivel agregat pe baza fundamentelor științifice",
+          "Studentul/Absolventul manifestă o atitudine proactivă și responsabilă în ceea ce privește fundamentarea științifică și elaborarea instrumentelor de evaluare a potențialelor efecte ale unor politici economice la nivel global pe termen mediu și lung"
+        ]
+      }
+    },
+    {
+      "code": "CBGK0301",
+      "name_hu": "Könyvelés",
+      "name_ro": "Contabilitate",
+      "name_en": "Accounting",
+      "credits": 5,
+      "year": 1,
+      "semester": 1,
+      "category": "DF",
+      "course_type": "DOB",
+      "lecture_hours": 2,
+      "seminar_hours": 0,
+      "lab_hours": 2,
+      "project_hours": 0,
+      "exam_type": "E",
+      "learning_outcomes": {
+        "knowledge": [
+          "Studentul/Absolventul identifică elementele din rapoartele financiare ale unei entități raportoare",
+          "Studentul/Absolventul identifică rapoartele financiare ale unei entități raportoare",
+          "Studentul/Absolventul clasifică elementele din rapoartele financiare ale unei entități raportoare",
+          "Studentul/Absolventul identifică tranzacțiile și evenimentele de bază ale unei entități raportoare",
+          "Studentul/Absolventul dezvoltă practici privind aplicarea principiului partidei duble pentru înregistrarea tranzacțiilor și evenimentelor unei entități raportoare",
+          "Studentul/Absolventul dezvoltă practici privind întocmirea (pregătirea) situațiilor (rapoartelor) financiare ale unei entități raportoare"
+        ],
+        "skills": [
+          "Studentul/Absolventul calculează indicatorii din rapoartele financiare ale unei entități raportoare",
+          "Studentul/Absolventul interpretează indicatorii din rapoartele financiare ale unei entități raportoare",
+          "Studentul/Absolventul diferențiază utilizatorii de informații financiar-contabile și nevoile lor informaționale",
+          "Studentul/Absolventul comunică utilizatorilor informații din rapoartele financiare"
+        ],
+        "responsibility_autonomy": [
+          "Studentul/Absolventul demonstrează capacitatea de a identifica și colecta datele financiare relevante pentru întocmirea situațiilor financiare",
+          "Studentul/Absolventul verifică corectitudinea analizei contabile",
+          "Studentul/Absolventul lucrează autonom în interpretarea și analiza datelor financiar-contabile"
+        ]
+      }
+    },
+    {
+      "code": "CBEI0090",
+      "name_hu": "Informatika",
+      "name_ro": "Informatică",
+      "name_en": "Informatics",
+      "credits": 5,
+      "year": 1,
+      "semester": 1,
+      "category": "DF",
+      "course_type": "DOB",
+      "lecture_hours": 2,
+      "seminar_hours": 0,
+      "lab_hours": 2,
+      "project_hours": 0,
+      "exam_type": "VP",
+      "learning_outcomes": {
+        "knowledge": [
+          "Studentul/Absolventul identifică funcționalitățile avansate ale aplicațiilor de birou și modul în care acestea sunt utilizate în domeniul economic (calcul tabelar complex prin funcții, validarea, interogarea, sintetizarea datelor și reprezentarea grafică a acestora)",
+          "Studentul/Absolventul identifică principiile fundamentale ale securității informațiilor, inclusiv confidențialitatea, integritatea și disponibilitatea datelor din domeniul economic",
+          "Studentul/Absolventul identifică și analizează conceptele și tehnologiile de automatizare a proceselor de afaceri și gestiune a bazelor de date specifice domeniului economic",
+          "Studentul/Absolventul descrie conceptele de bază din domeniul tehnologiilor emergente specifice societății informaționale bazată pe cunoaștere (IoT, AI, Cloud/Fog/Edge Computing, Blockchain etc.)"
+        ],
+        "skills": [
+          "Studentul/Absolventul utilizează aplicațiile de birou în domeniul economic",
+          "Studentul/Absolventul recunoaște și evaluează riscurile de securitate asociate cu gestionarea informațiilor în domeniul economic",
+          "Studentul/Absolventul utilizează instrumente de automatizare, pentru a automatiza sarcinile repetitive în activitățile economice",
+          "Studentul/Absolventul identifică procesele de afaceri care pot fi automatizate",
+          "Studentul/Absolventul utilizează instrumentele open source pentru exploatarea principalelor facilități oferite de tehnologiile emergente"
+        ],
+        "responsibility_autonomy": [
+          "Studentul/Absolventul asigură acuratețea și claritatea informațiilor din documentele gestionate cu aplicații de birou",
+          "Studentul/Absolventul operează cu respectarea măsurilor preventive pentru protejarea datelor",
+          "Studentul/Absolventul verifică și monitorizează corectitudinea proceselor automatizate, asigurând acuratețea datelor și conformitatea cu reglementările în vigoare",
+          "Studentul/Absolventul demonstrează capacitatea de a exploata oportunitățile de natură tehnologică și economică generate de mediul informațional în contextul smart development"
+        ]
+      }
+    },
+    {
+      "code": "CBEI0501",
+      "name_hu": "Programozás alapjai",
+      "name_ro": "Bazele programării",
+      "name_en": "Programming Fundamentals",
+      "credits": 4,
+      "year": 1,
+      "semester": 1,
+      "category": "DS",
+      "course_type": "DOB",
+      "lecture_hours": 1,
+      "seminar_hours": 0,
+      "lab_hours": 2,
+      "project_hours": 0,
+      "exam_type": "E",
+      "learning_outcomes": {
+        "knowledge": [
+          "Studentul/Absolventul identifică, recunoaște, descrie și explică conceptele fundamentale privind programarea calculatoarelor și tehnicile de programare de bază, exemplificate printr-un limbaj popular de programare",
+          "Studentul/Absolventul descrie și explică structuri de date, algoritmi, limbaje de programare utilizate în domeniul economic"
+        ],
+        "skills": [
+          "Studentul/Absolventul utilizează instrumente pentru proiectarea, implementarea, testarea și depanarea unui program ce folosește construcțiile fundamentale specifice programării",
+          "Studentul/Absolventul scrie cod pentru prelucrarea datelor economice, utilizând limbaje de programare, în context economic"
+        ],
+        "responsibility_autonomy": [
+          "Studentul/Absolventul proiectează, implementează, testează și depanează programe care folosesc construcțiile fundamentale specifice programării"
+        ]
+      }
+    },
+    {
+      "code": "CBFF0011",
+      "name_hu": "Gazdasági földrajz",
+      "name_ro": "Geografie economică",
+      "name_en": "Economic Geography",
+      "credits": 4,
+      "year": 1,
+      "semester": 1,
+      "category": "DF",
+      "course_type": "DOB",
+      "lecture_hours": 2,
+      "seminar_hours": 1,
+      "lab_hours": 0,
+      "project_hours": 0,
+      "exam_type": "VP"
+    },
+    {
+      "code": "CBXZ0101",
+      "name_hu": "Idegen nyelv I.",
+      "name_ro": "Limbă străină I.",
+      "name_en": "Foreign Language I.",
+      "credits": 3,
+      "year": 1,
+      "semester": 1,
+      "category": "DF",
+      "course_type": "DOB",
+      "lecture_hours": 0,
+      "seminar_hours": 0,
+      "lab_hours": 2,
+      "project_hours": 0,
+      "exam_type": "VP"
+    },
+    {
+      "code": "CBSX0011",
+      "name_hu": "Testnevelés I.",
+      "name_ro": "Educaţie fizică I.",
+      "name_en": "Physical Education I.",
+      "credits": 1,
+      "year": 1,
+      "semester": 1,
+      "category": "DC",
+      "course_type": "DOB",
+      "lecture_hours": 0,
+      "seminar_hours": 1,
+      "lab_hours": 0,
+      "project_hours": 0,
+      "exam_type": "A/R"
+    },
+    {
+      "code": "CBEM0101",
+      "name_hu": "Gazdasági statisztika",
+      "name_ro": "Statistică economică",
+      "name_en": "Economic Statistics",
+      "credits": 5,
+      "year": 1,
+      "semester": 2,
+      "category": "DF",
+      "course_type": "DOB",
+      "lecture_hours": 2,
+      "seminar_hours": 0,
+      "lab_hours": 2,
+      "project_hours": 0,
+      "exam_type": "E"
+    },
+    {
+      "code": "CBEM0141",
+      "name_hu": "Matematikai analízis",
+      "name_ro": "Analiză matematică",
+      "name_en": "Mathematical Analysis",
+      "credits": 5,
+      "year": 1,
+      "semester": 2,
+      "category": "DF",
+      "course_type": "DOB",
+      "lecture_hours": 2,
+      "seminar_hours": 2,
+      "lab_hours": 0,
+      "project_hours": 0,
+      "exam_type": "E"
+    },
+    {
+      "code": "CBGM0011",
+      "name_hu": "Menedzsment",
+      "name_ro": "Management",
+      "name_en": "Management",
+      "credits": 5,
+      "year": 1,
+      "semester": 2,
+      "category": "DF",
+      "course_type": "DOB",
+      "lecture_hours": 2,
+      "seminar_hours": 2,
+      "lab_hours": 0,
+      "project_hours": 0,
+      "exam_type": "E",
+      "learning_outcomes": {
+        "knowledge": [
+          "Studentul/Absolventul identifică și analizează teoriile, conceptele și instrumentarul necesar proceselor manageriale în corelație cu mediul organizației",
+          "Studentul/Absolventul operează cu constructe teoretice și recunoaște relevanța sistemului de management și a subsistemelor sale",
+          "Studentul/Absolventul identifică, diferențiază și utilizează pertinent conceptele și metodele necesare în procesul decizional din cadrul organizațiilor"
+        ],
+        "skills": [
+          "Studentul/Absolventul analizează și interpretează fenomenele, situațiile și procesele organizaționale din perspectiva funcțiilor manageriale",
+          "Studentul/Absolventul aplică sistemele, metodele și tehnicile de management pentru soluționarea problemelor complexe de natură economico-managerială din practica organizațiilor",
+          "Studentul/Absolventul fundamentează științific deciziile manageriale"
+        ],
+        "responsibility_autonomy": [
+          "Studentul/Absolventul manifestă o atitudine proactivă și responsabilă în exercitarea funcțiilor managementului și de asumare a responsabilităților specifice postului de manager pe diferite niveluri ierarhice în cadrul organizațiilor",
+          "Studentul/Absolventul acționează coerent în procesul de adoptare a deciziilor manageriale fundamentate științific",
+          "Studentul/Absolventul utilizează coerent și autonom conceptele în vederea elaborării lucrărilor de analiză și diagnoză, privind funcționarea organizației",
+          "Studentul/Absolventul acționează coerent în ceea ce privește elaborarea studiilor/lucrărilor privind funcționarea sistemului managerial și a subsistemelor sale"
+        ]
+      }
+    },
+    {
+      "code": "CBGG0021",
+      "name_hu": "Mikroökonómia",
+      "name_ro": "Microeconomie",
+      "name_en": "Microeconomics",
+      "credits": 5,
+      "year": 1,
+      "semester": 2,
+      "category": "DF",
+      "course_type": "DOB",
+      "lecture_hours": 2,
+      "seminar_hours": 2,
+      "lab_hours": 0,
+      "project_hours": 0,
+      "exam_type": "E"
+    },
+    {
+      "code": "CBEI0511",
+      "name_hu": "Algoritmusok és adatstruktúrák",
+      "name_ro": "Algoritmi și structuri de date",
+      "name_en": "Algorithms and Data Structures",
+      "credits": 5,
+      "year": 1,
+      "semester": 2,
+      "category": "DS",
+      "course_type": "DOB",
+      "lecture_hours": 2,
+      "seminar_hours": 0,
+      "lab_hours": 2,
+      "project_hours": 0,
+      "exam_type": "E",
+      "learning_outcomes": {
+        "knowledge": [
+          "Studentul/Absolventul identifică, recunoaște, descrie și explică conceptele fundamentale privind programarea calculatoarelor și tehnicile de programare de bază, exemplificate printr-un limbaj popular de programare",
+          "Studentul/Absolventul descrie și explică structuri de date, algoritmi, limbaje de programare utilizate în domeniul economic",
+          "Studentul/Absolventul descrie structurile de date fundamentale",
+          "Studentul/Absolventul analizează complexitatea algoritmilor de căutare și sortare"
+        ],
+        "skills": [
+          "Studentul/Absolventul utilizează instrumente pentru proiectarea, implementarea, testarea și depanarea unui program ce folosește construcțiile fundamentale specifice programării",
+          "Studentul/Absolventul scrie cod pentru prelucrarea datelor economice, utilizând limbaje de programare, în context economic",
+          "Studentul/Absolventul programează algoritmi eficienți de manipulare a structurilor de date",
+          "Studentul/Absolventul evaluează complexitatea algoritmică pentru a optimiza performanța programelor"
+        ],
+        "responsibility_autonomy": [
+          "Studentul/Absolventul proiectează, implementează, testează și depanează programe care folosesc construcțiile fundamentale specifice programării"
+        ]
+      }
+    },
+    {
+      "code": "CBGI0131",
+      "name_hu": "VBA programozás",
+      "name_ro": "Programare VBA",
+      "name_en": "VBA Programming",
+      "credits": 3,
+      "year": 1,
+      "semester": 2,
+      "category": "DS",
+      "course_type": "DOB",
+      "lecture_hours": 0,
+      "seminar_hours": 0,
+      "lab_hours": 2,
+      "project_hours": 0,
+      "exam_type": "VP",
+      "learning_outcomes": {
+        "knowledge": [
+          "Studentul/Absolventul identifică, recunoaște, descrie și explică conceptele fundamentale privind programarea calculatoarelor și tehnicile de programare de bază, exemplificate printr-un limbaj popular de programare",
+          "Studentul/Absolventul descrie și explică structuri de date, algoritmi, limbaje de programare utilizate în domeniul economic",
+          "Studentul/Absolventul descrie sintaxa și structura limbajului VBA pentru automatizarea aplicațiilor Office",
+          "Studentul/Absolventul identifică obiectele și metodele specifice Excel și alte aplicații Microsoft Office"
+        ],
+        "skills": [
+          "Studentul/Absolventul utilizează instrumente pentru proiectarea, implementarea, testarea și depanarea unui program ce folosește construcțiile fundamentale specifice programării",
+          "Studentul/Absolventul scrie cod pentru prelucrarea datelor economice, utilizând limbaje de programare, în context economic",
+          "Studentul/Absolventul dezvoltă macrocomenzi pentru automatizarea task-urilor repetitive în Excel",
+          "Studentul/Absolventul creează formulare utilizator interactive în mediul VBA"
+        ],
+        "responsibility_autonomy": [
+          "Studentul/Absolventul proiectează, implementează, testează și depanează programe care folosesc construcțiile fundamentale specifice programării",
+          "Studentul/Absolventul dezvoltă autonom soluții VBA pentru optimizarea activităților de birou"
+        ]
+      }
+    },
+    {
+      "code": "CBXZ0102",
+      "name_hu": "Idegen nyelv II.",
+      "name_ro": "Limbă străină II.",
+      "name_en": "Foreign Language II.",
+      "credits": 2,
+      "year": 1,
+      "semester": 2,
+      "category": "DC",
+      "course_type": "DOB",
+      "lecture_hours": 0,
+      "seminar_hours": 0,
+      "lab_hours": 2,
+      "project_hours": 0,
+      "exam_type": "VP"
+    },
+    {
+      "code": "CBSX0012",
+      "name_hu": "Testnevelés II.",
+      "name_ro": "Educaţie fizică II.",
+      "name_en": "Physical Education II.",
+      "credits": 1,
+      "year": 1,
+      "semester": 2,
+      "category": "DC",
+      "course_type": "DOB",
+      "lecture_hours": 0,
+      "seminar_hours": 1,
+      "lab_hours": 0,
+      "project_hours": 0,
+      "exam_type": "A/R"
+    },
+    {
+      "code": "CBGF0081",
+      "name_hu": "Pénzügyek",
+      "name_ro": "Finanţe",
+      "name_en": "Finance",
+      "credits": 4,
+      "year": 2,
+      "semester": 3,
+      "category": "DF",
+      "course_type": "DOB",
+      "lecture_hours": 1,
+      "seminar_hours": 2,
+      "lab_hours": 0,
+      "project_hours": 0,
+      "exam_type": "E",
+      "learning_outcomes": {
+        "knowledge": [
+          "Studentul/Absolventul operează cu constructe teoretice privind conceptele financiare fundamentale",
+          "Studentul/Absolventul demonstrează cunoștințe despre sectorul financiar bancar",
+          "Studentul/Absolventul demonstrează cunoștințe privind politicile financiare la nivel de public și la nivel de entitate economică",
+          "Studentul/Absolventul deține cunoștințe cu privire la aspectele etice, sociale și globale ale deciziilor financiare",
+          "Studentul/Absolventul recunoaște datele financiare relevante"
+        ],
+        "skills": [
+          "Studentul/Absolventul utilizează instrumente de analiză financiară specifice domeniul financiar-bancar",
+          "Studentul/Absolventul analizează fenomenele și activitățile financiare complexe specifice domeniului financiar-bancar",
+          "Studentul/Absolventul formulează strategii eficiente specifice activităților financiar-bancare",
+          "Studentul/Absolventul identifică și colectează datele financiare relevante pentru realizarea de studii, analize, rapoarte etc."
+        ],
+        "responsibility_autonomy": [
+          "Studentul/Absolventul acționează coerent în ceea ce privește elaborarea studiilor, analizelor, rapoartelor folosindu-se de instrumentele de analiză financiară",
+          "Studentul/Absolventul manifestă o atitudine proactivă și responsabilă în luarea deciziilor și oferirea de consultanță în domeniul financiar-bancar",
+          "Studentul/Absolventul manifestă un comportament etic în luarea deciziilor"
+        ]
+      }
+    },
+    {
+      "code": "CBGP0011",
+      "name_hu": "Marketing",
+      "name_ro": "Marketing",
+      "name_en": "Marketing",
+      "credits": 5,
+      "year": 2,
+      "semester": 3,
+      "category": "DF",
+      "course_type": "DOB",
+      "lecture_hours": 2,
+      "seminar_hours": 2,
+      "lab_hours": 0,
+      "project_hours": 0,
+      "exam_type": "E",
+      "learning_outcomes": {
+        "knowledge": [
+          "Studentul/Absolventul recunoaște conținutul și relevanța conceptelor de marketing și a modului de utilizare integrată a acestora, incluzând mediul de marketing, cercetarea pieței, funcțiile marketingului, strategiile de produs, de preț, de promovare și de distribuție, în context organizațional",
+          "Studentul/Absolventul identifică și diferențiază elementele detaliate și specifice legate de conceptele și instrumentele asociate domeniului marketing și demonstrează capacitatea de utilizare a acestora",
+          "Studentul/Absolventul explică, interpretează și implementează în mod integrat, conceptele și metodele specifice domeniului marketing"
+        ],
+        "skills": [
+          "Studentul/Absolventul utilizează abordarea integrată a cadrului conceptual și metodologic, pentru a rezolva probleme teoretice și practice noi",
+          "Studentul/Absolventul elaborează decizii de marketing fundamentate științific",
+          "Studentul/Absolventul elaborează proiecte profesionale și/sau de cercetare, utilizând inovativ un spectru variat de instrumente de marketing. De asemenea, formulează judecăți critice și de a fundamenta decizii constructive în marketing"
+        ],
+        "responsibility_autonomy": [
+          "Studentul/Absolventul realizează analize complexe asupra mediului intern și extern al organizației, identifică și formulează strategii de marketing și demonstrează capacitatea de asumare și exercitare a funcției/funcțiilor de execuție în domeniul marketing",
+          "Studentul/Absolventul manifestă o atitudine proactivă și responsabilă în fundamentarea științifică și adoptarea deciziilor în probleme de marketing",
+          "Studentul/Absolventul realizează studii/lucrări privind activitățile de marketing ale organizației"
+        ]
+      }
+    },
+    {
+      "code": "CBGG0751",
+      "name_hu": "Ökonometria",
+      "name_ro": "Econometrie",
+      "name_en": "Econometrics",
+      "credits": 4,
+      "year": 2,
+      "semester": 3,
+      "category": "DF",
+      "course_type": "DOB",
+      "lecture_hours": 2,
+      "seminar_hours": 0,
+      "lab_hours": 1,
+      "project_hours": 0,
+      "exam_type": "E"
+    },
+    {
+      "code": "CBEI0251",
+      "name_hu": "Objektumorientált programozás",
+      "name_ro": "Programare orientată obiect",
+      "name_en": "Object-Oriented Programming",
+      "credits": 5,
+      "year": 2,
+      "semester": 3,
+      "category": "DS",
+      "course_type": "DOB",
+      "lecture_hours": 2,
+      "seminar_hours": 0,
+      "lab_hours": 2,
+      "project_hours": 0,
+      "exam_type": "VP",
+      "learning_outcomes": {
+        "knowledge": [
+          "Studentul/Absolventul prezintă conceptele de programare orientată obiect și elaborează programe dezvoltate în paradigma orientată obiect",
+          "Studentul/Absolventul definește principiile programării orientate pe obiecte (încapsulare, moștenire, polimorfism)",
+          "Studentul/Absolventul clasifică tipurile de relații între clase (compoziție, moștenire, asociere)"
+        ],
+        "skills": [
+          "Studentul/Absolventul demonstrează asimilarea conceptelor de programare orientată obiect și dezvoltarea capacității de rezolvarea a problemelor practice prin elaborarea de programe dezvoltate în paradigma orientată obiect",
+          "Studentul/Absolventul aplică principiile Programării orientate obiect (încapsulare, moștenire, polimorfism) în proiectarea claselor și obiectelor"
+        ],
+        "responsibility_autonomy": [
+          "Studentul/Absolventul elaborează programe dezvoltate în regim orientat obiect, utilizând limbaje de programare specifice"
+        ]
+      }
+    },
+    {
+      "code": "CBEM0351",
+      "name_hu": "Operációkutatás alapjai",
+      "name_ro": "Bazele cercetărilor operaționale",
+      "name_en": "Fundamentals of Operations Research",
+      "credits": 5,
+      "year": 2,
+      "semester": 3,
+      "category": "DS",
+      "course_type": "DOB",
+      "lecture_hours": 2,
+      "seminar_hours": 0,
+      "lab_hours": 2,
+      "project_hours": 0,
+      "exam_type": "E",
+      "learning_outcomes": {
+        "knowledge": [
+          "Studentul/Absolventul identifică componentele proceselor economice complexe și ale sistemelor micro și macro-economice și sociale și le asociază modele economico-matematice de optimizare",
+          "Studentul/Absolventul cunoaște algoritmii și euristicile de rezolvare a modelelor economico-matematice"
+        ],
+        "skills": [
+          "Studentul/Absolventul fundamentează deciziile optime în cadrul sistemelor economice cu ajutorul rezultatelor utilizării algoritmilor de rezolvare a modelelor de optimizare",
+          "Studentul/Absolventul utilizează pachete software care implementează algoritmii de optimizare matematică dedicați fundamentării deciziilor organizației"
+        ],
+        "responsibility_autonomy": [
+          "Studentul/Absolventul utilizează un limbaj și un raționament corect și bine justificat, bazat pe metodele cantitative de analiză și modelare în adoptarea deciziilor în activitatea organizațiilor economice",
+          "Studentul/Absolventul elaborează în mod individual și în echipă soluții pentru probleme economice de complexitate medie cu care se confruntă organizațiile ca parte a sistemelor macroeconomice"
+        ]
+      }
+    },
+    {
+      "code": "CBGG0031",
+      "name_hu": "Makroökonómia",
+      "name_ro": "Macroeconomie",
+      "name_en": "Macroeconomics",
+      "credits": 4,
+      "year": 2,
+      "semester": 3,
+      "category": "DF",
+      "course_type": "DOB",
+      "lecture_hours": 2,
+      "seminar_hours": 2,
+      "lab_hours": 0,
+      "project_hours": 0,
+      "exam_type": "E"
+    },
+    {
+      "code": "CBXZ0103",
+      "name_hu": "Idegen nyelv III.",
+      "name_ro": "Limbă străină III",
+      "name_en": "Foreign Language III.",
+      "credits": 3,
+      "year": 2,
+      "semester": 3,
+      "category": "DC",
+      "course_type": "DOB",
+      "lecture_hours": 0,
+      "seminar_hours": 0,
+      "lab_hours": 2,
+      "project_hours": 0,
+      "exam_type": "VP"
+    },
+    {
+      "code": "CBSX0013",
+      "name_hu": "Testnevelés III.",
+      "name_ro": "Educaţie fizică III.",
+      "name_en": "Physical Education III.",
+      "credits": 1,
+      "year": 2,
+      "semester": 3,
+      "category": "DC",
+      "course_type": "DOB",
+      "lecture_hours": 0,
+      "seminar_hours": 1,
+      "lab_hours": 0,
+      "project_hours": 0,
+      "exam_type": "A/R"
+    },
+    {
+      "code": "CBEI0111",
+      "name_hu": "Adatbázisok",
+      "name_ro": "Baze de date",
+      "name_en": "Databases",
+      "credits": 5,
+      "year": 2,
+      "semester": 4,
+      "category": "DF",
+      "course_type": "DOB",
+      "lecture_hours": 2,
+      "seminar_hours": 0,
+      "lab_hours": 2,
+      "project_hours": 0,
+      "exam_type": "E",
+      "learning_outcomes": {
+        "knowledge": [
+          "Studentul/Absolventul expune cunoștințe privind conceptele și tehnologiile de automatizare a proceselor de afaceri și a bazelor de date specifice domeniului economic"
+        ],
+        "skills": [
+          "Studentul/Absolventul utilizează instrumente de automatizare, pentru a automatiza sarcinile repetitive în activitățile economice",
+          "Studentul/Absolventul creează și administrează baze de date economice pentru stocarea și analiza informațiilor",
+          "Studentul/Absolventul identifică procesele de afaceri care pot fi automatizate"
+        ],
+        "responsibility_autonomy": [
+          "Studentul/Absolventul verifică și monitorizează corectitudinea proceselor automatizate, asigurând acuratețea datelor și conformitatea cu reglementările în vigoare"
+        ]
+      }
+    },
+    {
+      "code": "CBEI0261",
+      "name_hu": "Webtechnológiák",
+      "name_ro": "Tehnologii Web",
+      "name_en": "Web Technologies",
+      "credits": 4,
+      "year": 2,
+      "semester": 4,
+      "category": "DS",
+      "course_type": "DOB",
+      "lecture_hours": 1,
+      "seminar_hours": 0,
+      "lab_hours": 2,
+      "project_hours": 0,
+      "exam_type": "E",
+      "learning_outcomes": {
+        "knowledge": [
+          "Studentul/Absolventul identifică, recunoaște, descrie și explică conceptele fundamentale privind programarea calculatoarelor și tehnicile de programare de bază, exemplificate printr-un limbaj popular de programare",
+          "Studentul/Absolventul descrie și explică structuri de date, algoritmi, limbaje de programare utilizate în domeniul economic",
+          "Studentul/Absolventul descrie structura și sintaxa limbajului HTML pentru crearea paginilor web",
+          "Studentul/Absolventul identifică proprietățile CSS pentru stilizarea elementelor web"
+        ],
+        "skills": [
+          "Studentul/Absolventul utilizează instrumente pentru proiectarea, implementarea, testarea și depanarea unui program ce folosește construcțiile fundamentale specifice programării",
+          "Studentul/Absolventul scrie cod pentru prelucrarea datelor economice, utilizând limbaje de programare, în context economic",
+          "Studentul/Absolventul creează pagini web statice folosind HTML și CSS",
+          "Studentul/Absolventul aplică JavaScript basic pentru funcționalități interactive simple"
+        ],
+        "responsibility_autonomy": [
+          "Studentul/Absolventul proiectează, implementează, testează și depanează programe care folosesc construcțiile fundamentale specifice programării",
+          "Studentul/Absolventul dezvoltă autonom pagini web complete respectând standardele web"
+        ]
+      }
+    },
+    {
+      "code": "CBEM0091",
+      "name_hu": "Operációkutatás",
+      "name_ro": "Cercetări operaţionale",
+      "name_en": "Operational Research",
+      "credits": 5,
+      "year": 2,
+      "semester": 4,
+      "category": "DS",
+      "course_type": "DOB",
+      "lecture_hours": 2,
+      "seminar_hours": 0,
+      "lab_hours": 2,
+      "project_hours": 0,
+      "exam_type": "VP",
+      "learning_outcomes": {
+        "knowledge": [
+          "Studentul/Absolventul descrie metodele avansate de optimizare și modelarea matematică în probleme economice complexe",
+          "Studentul/Absolventul identifică tehnicile de programare liniară, programare întreagă și programare dinamică",
+          "Studentul/Absolventul explică teoriile jocurilor și aplicațiile lor în luarea deciziilor economice",
+          "Studentul/Absolventul cunoaște metodele de simulare și analiză de scenarii în mediul economic"
+        ],
+        "skills": [
+          "Studentul/Absolventul aplică metode avansate de cercetare operațională pentru rezolvarea problemelor de optimizare economică",
+          "Studentul/Absolventul dezvoltă modele matematice complexe pentru fundamentarea deciziilor strategice",
+          "Studentul/Absolventul utilizează software specializat pentru implementarea algoritmilor de optimizare",
+          "Studentul/Absolventul interpretează și validează rezultatele obținute din modelele de cercetare operațională"
+        ],
+        "responsibility_autonomy": [
+          "Studentul/Absolventul proiectează autonom studii de cercetare operațională pentru probleme economice reale",
+          "Studentul/Absolventul validează și interpretează rezultatele modelelor de optimizare pentru luarea deciziilor",
+          "Studentul/Absolventul asigură calitatea și corectitudinea metodelor de cercetare operațională aplicate"
+        ]
+      }
+    },
+    {
+      "code": "CBEI0430",
+      "name_hu": "Java programozás",
+      "name_ro": "Programare Java",
+      "name_en": "Java Programming",
+      "credits": 5,
+      "year": 2,
+      "semester": 4,
+      "category": "DS",
+      "course_type": "DOB",
+      "lecture_hours": 2,
+      "seminar_hours": 0,
+      "lab_hours": 2,
+      "project_hours": 0,
+      "exam_type": "E",
+      "learning_outcomes": {
+        "knowledge": [
+          "Studentul/Absolventul prezintă conceptele de programare orientată obiect și elaborează programe dezvoltate în paradigma orientată obiect",
+          "Studentul/Absolventul definește principiile programării orientate pe obiecte (încapsulare, moștenire, polimorfism)",
+          "Studentul/Absolventul clasifică tipurile de relații între clase (compoziție, moștenire, asociere)",
+          "Studentul/Absolventul descrie sintaxa și caracteristicile specifice limbajului Java",
+          "Studentul/Absolventul explică arhitectura platformei Java și mecanismele de gestionare a memoriei"
+        ],
+        "skills": [
+          "Studentul/Absolventul demonstrează asimilarea conceptelor de programare orientată obiect și dezvoltarea capacității de rezolvarea a problemelor practice prin elaborarea de programe dezvoltate în paradigma orientată obiect",
+          "Studentul/Absolventul aplică principiile Programării orientate obiect (încapsulare, moștenire, polimorfism) în proiectarea claselor și obiectelor",
+          "Studentul/Absolventul dezvoltă aplicații Java pentru rezolvarea problemelor economice",
+          "Studentul/Absolventul implementează interfețe grafice utilizator folosind tehnologiile Java"
+        ],
+        "responsibility_autonomy": [
+          "Studentul/Absolventul elaborează programe dezvoltate în regim orientat obiect, utilizând limbaje de programare specifice",
+          "Studentul/Absolventul dezvoltă autonom aplicații Java complexe pentru mediul de afaceri"
+        ]
+      }
+    },
+    {
+      "code": "CBEI0481",
+      "name_hu": "Informatikai rendszerek döntéstámogatáshoz",
+      "name_ro": "Sisteme informatice pentru asistarea deciziilor",
+      "name_en": "IT Systems for Decision Support",
+      "credits": 5,
+      "year": 2,
+      "semester": 4,
+      "category": "DS",
+      "course_type": "DOB",
+      "lecture_hours": 2,
+      "seminar_hours": 0,
+      "lab_hours": 1,
+      "project_hours": 0,
+      "exam_type": "E",
+      "learning_outcomes": {
+        "knowledge": [
+          "Studentul/Absolventul expune cunoștințe privind conceptele și tehnologiile de automatizare a proceselor de afaceri și a bazelor de date specifice domeniului economic",
+          "Studentul/Absolventul descrie arhitectura și componentele sistemelor de suport pentru luarea deciziilor (DSS)",
+          "Studentul/Absolventul explică tehnicile de business intelligence și analiza datelor pentru suportul decizional"
+        ],
+        "skills": [
+          "Studentul/Absolventul utilizează instrumente de automatizare, pentru a automatiza sarcinile repetitive în activitățile economice",
+          "Studentul/Absolventul creează și administrează baze de date economice pentru stocarea și analiza informațiilor",
+          "Studentul/Absolventul identifică procesele de afaceri care pot fi automatizate",
+          "Studentul/Absolventul dezvoltă sisteme informatice pentru asistarea proceselor decizionale"
+        ],
+        "responsibility_autonomy": [
+          "Studentul/Absolventul verifică și monitorizează corectitudinea proceselor automatizate, asigurând acuratețea datelor și conformitatea cu reglementările în vigoare",
+          "Studentul/Absolventul proiectează autonom sisteme de suport decizional adaptate nevoilor organizaționale"
+        ]
+      }
+    },
+    {
+      "code": "CBGI0100",
+      "name_hu": "Gyakorlat",
+      "name_ro": "Practică",
+      "name_en": "Internship",
+      "credits": 3,
+      "year": 2,
+      "semester": 4,
+      "category": "DS",
+      "course_type": "DOB",
+      "lecture_hours": 0,
+      "seminar_hours": 0,
+      "lab_hours": 6,
+      "project_hours": 0,
+      "exam_type": "VP",
+      "learning_outcomes": {
+        "knowledge": [
+          "Studentul/Absolventul expune cunoștințe privind conceptele și tehnologiile de automatizare a proceselor de afaceri și a bazelor de date specifice domeniului economic",
+          "Studentul/Absolventul identifică metodologiile și standardele utilizate în mediul profesional IT",
+          "Studentul/Absolventul cunoaște procesele de dezvoltare software și managementul proiectelor"
+        ],
+        "skills": [
+          "Studentul/Absolventul utilizează instrumente de automatizare, pentru a automatiza sarcinile repetitive în activitățile economice",
+          "Studentul/Absolventul creează și administrează baze de date economice pentru stocarea și analiza informațiilor",
+          "Studentul/Absolventul aplică cunoștințele teoretice în rezolvarea problemelor reale din mediul de lucru",
+          "Studentul/Absolventul colaborează eficient în echipe multidisciplinare de dezvoltare software"
+        ],
+        "responsibility_autonomy": [
+          "Studentul/Absolventul verifică și monitorizează corectitudinea proceselor automatizate, asigurând acuratețea datelor și conformitatea cu reglementările în vigoare",
+          "Studentul/Absolventul demonstrează responsabilitate în îndeplinirea sarcinilor profesionale"
+        ]
+      }
+    },
+    {
+      "code": "CBXZ0104",
+      "name_hu": "Idegen nyelv IV",
+      "name_ro": "Limbă străină IV",
+      "name_en": "Foreign Language IV",
+      "credits": 3,
+      "year": 2,
+      "semester": 4,
+      "category": "DC",
+      "course_type": "DOB",
+      "lecture_hours": 0,
+      "seminar_hours": 0,
+      "lab_hours": 2,
+      "project_hours": 0,
+      "exam_type": "VP"
+    },
+    {
+      "code": "CBSX0014",
+      "name_hu": "Testnevelés IV.",
+      "name_ro": "Educaţie fizică IV.",
+      "name_en": "Physical Education IV.",
+      "credits": 1,
+      "year": 2,
+      "semester": 4,
+      "category": "DC",
+      "course_type": "DOB",
+      "lecture_hours": 0,
+      "seminar_hours": 1,
+      "lab_hours": 0,
+      "project_hours": 0,
+      "exam_type": "A/R"
+    },
+    {
+      "code": "CBEI0411",
+      "name_hu": "Számítógéphálózatok",
+      "name_ro": "Rețele de calculatoare",
+      "name_en": "Computer Networks",
+      "credits": 4,
+      "year": 3,
+      "semester": 5,
+      "category": "DS",
+      "course_type": "DOB",
+      "lecture_hours": 2,
+      "seminar_hours": 0,
+      "lab_hours": 2,
+      "project_hours": 0,
+      "exam_type": "E",
+      "learning_outcomes": {
+        "knowledge": [
+          "Studentul/Absolventul descrie conceptele fundamentale ale tehnologiei informației, incluzând hardware, software, rețele și securitate informatică",
+          "Studentul/Absolventul prezintă conceptele legate de realizarea aplicațiilor software cu comunicare în rețea și sincronizare între acțiunilor a multipli utilizatori",
+          "Studentul/Absolventul descrie arhitectura și protocoalele rețelelor de calculatoare",
+          "Studentul/Absolventul identifică tipurile de rețele (LAN, WAN, Internet) și tehnologiile de conectivitate"
+        ],
+        "skills": [
+          "Studentul/Absolventul aplică noțiunile legate de teoria informației, identifică și descrie elementele hardware și software ale unui sistem de calcul",
+          "Studentul/Absolventul operează cu diferite tipuri de software pentru a instala și configura sisteme de operare și aplicații esențiale",
+          "Studentul/Absolventul configurează și administrează rețele de calculatoare pentru organizații",
+          "Studentul/Absolventul implementează soluții de securitate pentru protecția rețelelor"
+        ],
+        "responsibility_autonomy": [
+          "Studentul/Absolventul gestionează sistemul de fișiere și resursele hardware și software ale unui sistem de calcul",
+          "Studentul/Absolventul proiectează autonom arhitecturi de rețea pentru mediul de afaceri"
+        ]
+      }
+    },
+    {
+      "code": "CBEI0461",
+      "name_hu": "Fejlett adatbázisok",
+      "name_ro": "Baze de date avansate",
+      "name_en": "Advanced Databases",
+      "credits": 5,
+      "year": 3,
+      "semester": 5,
+      "category": "DS",
+      "course_type": "DOB",
+      "lecture_hours": 2,
+      "seminar_hours": 0,
+      "lab_hours": 2,
+      "project_hours": 0,
+      "exam_type": "E",
+      "learning_outcomes": {
+        "knowledge": [
+          "Studentul/Absolventul expune cunoștințe privind conceptele și tehnologiile de automatizare a proceselor de afaceri și a bazelor de date specifice domeniului economic",
+          "Studentul/Absolventul descrie tehnicile avansate de proiectare și optimizare a bazelor de date",
+          "Studentul/Absolventul identifică tipurile de baze de date (relaționale, NoSQL, distribuite)"
+        ],
+        "skills": [
+          "Studentul/Absolventul utilizează instrumente de automatizare, pentru a automatiza sarcinile repetitive în activitățile economice",
+          "Studentul/Absolventul creează și administrează baze de date economice pentru stocarea și analiza informațiilor",
+          "Studentul/Absolventul proiectează și implementează sisteme complexe de gestiune a bazelor de date",
+          "Studentul/Absolventul optimizează performanța interogărilor și operațiilor asupra bazelor de date"
+        ],
+        "responsibility_autonomy": [
+          "Studentul/Absolventul verifică și monitorizează corectitudinea proceselor automatizate, asigurând acuratețea datelor și conformitatea cu reglementările în vigoare",
+          "Studentul/Absolventul administrează autonom sisteme complexe de baze de date"
+        ]
+      }
+    },
+    {
+      "code": "CBEI0241",
+      "name_hu": "Webprogramozás",
+      "name_ro": "Programare Web",
+      "name_en": "Web Programming",
+      "credits": 5,
+      "year": 3,
+      "semester": 5,
+      "category": "DS",
+      "course_type": "DOB",
+      "lecture_hours": 2,
+      "seminar_hours": 0,
+      "lab_hours": 2,
+      "project_hours": 0,
+      "exam_type": "E",
+      "learning_outcomes": {
+        "knowledge": [
+          "Studentul/Absolventul identifică, recunoaște, descrie și explică conceptele fundamentale privind programarea calculatoarelor și tehnicile de programare de bază, exemplificate printr-un limbaj popular de programare",
+          "Studentul/Absolventul descrie și explică structuri de date, algoritmi, limbaje de programare utilizate în domeniul economic",
+          "Studentul/Absolventul descrie tehnologiile și limbajele pentru dezvoltarea aplicațiilor web dinamice",
+          "Studentul/Absolventul identifică arhitecturile moderne pentru aplicații web (MVC, SPA)"
+        ],
+        "skills": [
+          "Studentul/Absolventul utilizează instrumente pentru proiectarea, implementarea, testarea și depanarea unui program ce folosește construcțiile fundamentale specifice programării",
+          "Studentul/Absolventul scrie cod pentru prelucrarea datelor economice, utilizând limbaje de programare, în context economic",
+          "Studentul/Absolventul dezvoltă aplicații web dinamice și interactive",
+          "Studentul/Absolventul implementează soluții de autentificare și securitate web"
+        ],
+        "responsibility_autonomy": [
+          "Studentul/Absolventul proiectează, implementează, testează și depanează programe care folosesc construcțiile fundamentale specifice programării",
+          "Studentul/Absolventul dezvoltă autonom aplicații web complete pentru mediul de afaceri"
+        ]
+      }
+    },
+    {
+      "code": "CBGK0081",
+      "name_hu": "Informatikai rendszerek tervezése",
+      "name_ro": "Proiectarea Sistemelor Informatice",
+      "name_en": "Design of IT Systems",
+      "credits": 4,
+      "year": 3,
+      "semester": 5,
+      "category": "DS",
+      "course_type": "DOB",
+      "lecture_hours": 2,
+      "seminar_hours": 0,
+      "lab_hours": 2,
+      "project_hours": 0,
+      "exam_type": "VP",
+      "learning_outcomes": {
+        "knowledge": [
+          "Studentul/Absolventul expune cunoștințe privind conceptele și tehnologiile de automatizare a proceselor de afaceri și a bazelor de date specifice domeniului economic",
+          "Studentul/Absolventul descrie metodologiile și standardele pentru proiectarea sistemelor informatice",
+          "Studentul/Absolventul identifică fazele ciclului de viață al dezvoltării software (SDLC)"
+        ],
+        "skills": [
+          "Studentul/Absolventul utilizează instrumente de automatizare, pentru a automatiza sarcinile repetitive în activitățile economice",
+          "Studentul/Absolventul identifică procesele de afaceri care pot fi automatizate",
+          "Studentul/Absolventul proiectează arhitecturi software scalabile și modulare",
+          "Studentul/Absolventul elaborează documentația tehnică și specificațiile sistemelor"
+        ],
+        "responsibility_autonomy": [
+          "Studentul/Absolventul verifică și monitorizează corectitudinea proceselor automatizate, asigurând acuratețea datelor și conformitatea cu reglementările în vigoare",
+          "Studentul/Absolventul conduce autonom procesul de proiectare a sistemelor informatice complexe"
+        ]
+      }
+    },
+    {
+      "code": "CBJJ0181",
+      "name_hu": "Jog",
+      "name_ro": "Drept",
+      "name_en": "Law",
+      "credits": 4,
+      "year": 3,
+      "semester": 5,
+      "category": "DF",
+      "course_type": "DOB",
+      "lecture_hours": 2,
+      "seminar_hours": 2,
+      "lab_hours": 0,
+      "project_hours": 0,
+      "exam_type": "E"
+    },
+    {
+      "code": "CBEI0471",
+      "name_hu": "Mobil eszközök és alkalmazások",
+      "name_ro": "Dispozitive și aplicații mobile",
+      "name_en": "Mobile Devices and Applications",
+      "credits": 5,
+      "year": 3,
+      "semester": 5,
+      "category": "DS",
+      "course_type": "DOP",
+      "lecture_hours": 2,
+      "seminar_hours": 0,
+      "lab_hours": 2,
+      "project_hours": 0,
+      "exam_type": "E",
+      "learning_outcomes": {
+        "knowledge": [
+          "Studentul/Absolventul identifică, recunoaște, descrie și explică conceptele fundamentale privind programarea calculatoarelor și tehnicile de programare de bază, exemplificate printr-un limbaj popular de programare",
+          "Studentul/Absolventul descrie și explică structuri de date, algoritmi, limbaje de programare utilizate în domeniul economic",
+          "Studentul/Absolventul descrie arhitectura și caracteristicile dispozitivelor mobile moderne",
+          "Studentul/Absolventul identifică platformele de dezvoltare pentru aplicații mobile (iOS, Android)"
+        ],
+        "skills": [
+          "Studentul/Absolventul utilizează instrumente pentru proiectarea, implementarea, testarea și depanarea unui program ce folosește construcțiile fundamentale specifice programării",
+          "Studentul/Absolventul scrie cod pentru prelucrarea datelor economice, utilizând limbaje de programare, în context economic",
+          "Studentul/Absolventul programează algoritmi eficienți de manipulare a structurilor de date",
+          "Studentul/Absolventul dezvoltă aplicații mobile native și cross-platform pentru activități economice",
+          "Studentul/Absolventul implementează funcționalități specifice mobile (GPS, camera, senzori)"
+        ],
+        "responsibility_autonomy": [
+          "Studentul/Absolventul proiectează, implementează, testează și depanează programe care folosesc construcțiile fundamentale specifice programării",
+          "Studentul/Absolventul dezvoltă autonom aplicații mobile complete pentru mediul de afaceri"
+        ]
+      }
+    },
+    {
+      "code": "CBEI0421",
+      "name_hu": "Windows alkalmazások programozása",
+      "name_ro": "Programarea aplicațiilor Windows",
+      "name_en": "Windows Applications Programming",
+      "credits": 5,
+      "year": 3,
+      "semester": 5,
+      "category": "DS",
+      "course_type": "DOP",
+      "lecture_hours": 2,
+      "seminar_hours": 0,
+      "lab_hours": 2,
+      "project_hours": 0,
+      "exam_type": "E"
+    },
+    {
+      "code": "CBHB0411",
+      "name_hu": "Magyar nyelv - gyakorlat",
+      "name_ro": "Limba română - seminar practic",
+      "name_en": "Romanian Language - Practical Seminar",
+      "credits": 3,
+      "year": 3,
+      "semester": 5,
+      "category": "DC",
+      "course_type": "DOB",
+      "lecture_hours": 0,
+      "seminar_hours": 2,
+      "lab_hours": 0,
+      "project_hours": 0,
+      "exam_type": "VP"
+    },
+    {
+      "code": "CBGG0890",
+      "name_hu": "Etika és akadémiai integritás",
+      "name_ro": "Etică şi integritate academică",
+      "name_en": "Ethics and Academic Integrity",
+      "credits": 5,
+      "year": 3,
+      "semester": 6,
+      "category": "DS",
+      "course_type": "DOB",
+      "lecture_hours": 2,
+      "seminar_hours": 0,
+      "lab_hours": 2,
+      "project_hours": 0,
+      "exam_type": "E"
+    },
+    {
+      "code": "CBGK0121",
+      "name_hu": "Mesterséges intelligencia és szakértői rendszerek",
+      "name_ro": "Inteligență artificială și sistem expert de gestiune",
+      "name_en": "Artificial Intelligence and Expert Systems",
+      "credits": 4,
+      "year": 3,
+      "semester": 6,
+      "category": "DS",
+      "course_type": "DOB",
+      "lecture_hours": 2,
+      "seminar_hours": 0,
+      "lab_hours": 1,
+      "project_hours": 0,
+      "exam_type": "E",
+      "learning_outcomes": {
+        "knowledge": [
+          "Studentul/Absolventul identifică componentele proceselor economice complexe și ale sistemelor micro și macro-economice și sociale și le asociază modele economico-matematice de optimizare",
+          "Studentul/Absolventul cunoaște algoritmii și euristicile de rezolvare a modelelor economico-matematice",
+          "Studentul/Absolventul descrie conceptele fundamentale ale inteligenței artificiale și machine learning",
+          "Studentul/Absolventul identifică tipurile de sisteme experte și domeniile lor de aplicare"
+        ],
+        "skills": [
+          "Studentul/Absolventul fundamentează deciziile optime în cadrul sistemelor economice cu ajutorul rezultatelor utilizării algoritmilor de rezolvare a modelelor de optimizare",
+          "Studentul/Absolventul utilizează pachete software care implementează algoritmii de optimizare matematică",
+          "Studentul/Absolventul dezvoltă sisteme experte pentru automatizarea deciziilor în gestiune",
+          "Studentul/Absolventul implementează algoritmi de machine learning pentru analiza datelor"
+        ],
+        "responsibility_autonomy": [
+          "Studentul/Absolventul utilizează un limbaj și un raționament corect și bine justificat, bazat pe metodele cantitative de analiză și modelare",
+          "Studentul/Absolventul proiectează autonom sisteme AI pentru rezolvarea problemelor de gestiune"
+        ]
+      }
+    },
+    {
+      "code": "CBEI0401",
+      "name_hu": "Operációs rendszerek",
+      "name_ro": "Sisteme de operare",
+      "name_en": "Operating Systems",
+      "credits": 4,
+      "year": 3,
+      "semester": 6,
+      "category": "DS",
+      "course_type": "DOB",
+      "lecture_hours": 2,
+      "seminar_hours": 0,
+      "lab_hours": 2,
+      "project_hours": 0,
+      "exam_type": "E",
+      "learning_outcomes": {
+        "knowledge": [
+          "Studentul/Absolventul descrie conceptele fundamentale ale tehnologiei informației, incluzând hardware, software, rețele și securitate informatică",
+          "Studentul/Absolventul explică arhitectura calculatoarelor și modul de interacțiune al componentelor (cpu, memorie, dispozitive de stocare, periferice)",
+          "Studentul/Absolventul clasifică tipurile de software: sistem de operare, aplicații și software de programare",
+          "Studentul/Absolventul explică rolul și funcțiile principale ale unui sistem de operare (gestionarea resurselor, interfața cu utilizatorul, securitatea)",
+          "Studentul/Absolventul compară tipurile de sisteme de operare (monolitic, microkernel, distribuit, timp real)",
+          "Studentul/Absolventul prezintă mecanismele de gestionare a proceselor, memoriei, fișierelor și dispozitivelor de intrare/ieșire",
+          "Studentul/Absolventul descrie mecanismele de securitate și protecția datelor în sistemele de operare",
+          "Studentul/Absolventul prezintă conceptele legate de realizarea aplicațiilor software cu comunicare în rețea și sincronizare între acțiunilor a multipli utilizatori, cu elemente de scalabilitate și securitate informatică"
+        ],
+        "skills": [
+          "Studentul/Absolventul aplică noțiunile legate de teoria informației, identifică și descrie elementele hardware și software ale unui sistem de calcul",
+          "Studentul/Absolventul detaliază arhitectura procesorului intel și identifică registrele principale, tipurile de instrucțiuni și modurile de adresare a memoriei",
+          "Studentul/Absolventul operează cu diferite tipuri de software pentru a instala și configura sisteme de operare și aplicații esențiale",
+          "Studentul/Absolventul rezolvă probleme tehnice simple legate de hardware și software prin diagnosticare și depanare",
+          "Studentul/Absolventul instalează și configurează diferite sisteme de operare (ex: windows, linux) pentru diverse medii de utilizare",
+          "Studentul/Absolventul gestionează procesele și serviciile, inclusiv inițierea, oprirea și prioritizarea acestora",
+          "Studentul/Absolventul administrează drepturile de acces și securitatea fișierelor pentru protecția datelor",
+          "Studentul/Absolventul rezolvă problemele comune ale sistemelor de operare utilizând instrumente de diagnosticare"
+        ],
+        "responsibility_autonomy": [
+          "Studentul/Absolventul gestionează sistemul de fișiere și resursele hardware și software ale unui sistem de calcul, monitorizează procesele din sistem, rezolvă problemele de securitate referitoare la un sistem de calcul"
+        ]
+      }
+    },
+    {
+      "code": "CBEM0261",
+      "name_hu": "Adatelemzés",
+      "name_ro": "Analiza datelor",
+      "name_en": "Data Analysis",
+      "credits": 4,
+      "year": 3,
+      "semester": 6,
+      "category": "DS",
+      "course_type": "DOP",
+      "lecture_hours": 2,
+      "seminar_hours": 0,
+      "lab_hours": 1,
+      "project_hours": 0,
+      "exam_type": "E"
+    },
+    {
+      "code": "CBGF0011",
+      "name_hu": "Vállalkozás pénzügyek",
+      "name_ro": "Finanțele întreprinderii",
+      "name_en": "Business Finance",
+      "credits": 4,
+      "year": 3,
+      "semester": 6,
+      "category": "DS",
+      "course_type": "DOP",
+      "lecture_hours": 2,
+      "seminar_hours": 0,
+      "lab_hours": 1,
+      "project_hours": 0,
+      "exam_type": "E",
+      "learning_outcomes": {
+        "knowledge": [
+          "Studentul/Absolventul identifică componentele proceselor economice complexe și ale sistemelor micro și macro-economice și sociale și le asociază modele economico-matematice de optimizare",
+          "Studentul/Absolventul descrie principiile fundamentale ale gestiunii financiare în întreprindere",
+          "Studentul/Absolventul identifică instrumentele de analiză financiară și evaluare a performanței"
+        ],
+        "skills": [
+          "Studentul/Absolventul utilizează pachete software care implementează algoritmii de optimizare matematică dedicați fundamentării deciziilor organizației",
+          "Studentul/Absolventul elaborează planuri financiare și bugetare pentru întreprinderi",
+          "Studentul/Absolventul analizează situațiile financiare și evaluează performanța economică"
+        ],
+        "responsibility_autonomy": [
+          "Studentul/Absolventul utilizează un limbaj și un raționament corect și bine justificat, bazat pe metodele cantitative de analiză și modelare în adoptarea deciziilor în activitatea organizațiilor economice",
+          "Studentul/Absolventul elaborează în mod individual și în echipă soluții pentru probleme economice de complexitate medie",
+          "Studentul/Absolventul gestionează autonom activități de planificare și control financiar"
+        ]
+      }
+    },
+    {
+      "code": "CBEI0661",
+      "name_hu": "Szoftveres eszközök csapatmunkához",
+      "name_ro": "Instrumente software pentru grupuri de lucru in echipa",
+      "name_en": "Software Tools for Team Work",
+      "credits": 4,
+      "year": 3,
+      "semester": 6,
+      "category": "DS",
+      "course_type": "DOP",
+      "lecture_hours": 2,
+      "seminar_hours": 0,
+      "lab_hours": 1,
+      "project_hours": 0,
+      "exam_type": "E"
+    },
+    {
+      "code": "CBEI0631",
+      "name_hu": "Multimédia",
+      "name_ro": "Multimedia",
+      "name_en": "Multimedia",
+      "credits": 5,
+      "year": 3,
+      "semester": 6,
+      "category": "DS",
+      "course_type": "DOP",
+      "lecture_hours": 2,
+      "seminar_hours": 0,
+      "lab_hours": 2,
+      "project_hours": 0,
+      "exam_type": "VP"
+    },
+    {
+      "code": "CBEI0441",
+      "name_hu": "Integrált informatikai rendszerek",
+      "name_ro": "Sisteme informatice integrate",
+      "name_en": "Integrated IT Systems",
+      "credits": 5,
+      "year": 3,
+      "semester": 6,
+      "category": "DS",
+      "course_type": "DOP",
+      "lecture_hours": 2,
+      "seminar_hours": 0,
+      "lab_hours": 2,
+      "project_hours": 0,
+      "exam_type": "VP",
+      "learning_outcomes": {
+        "knowledge": [
+          "Studentul/Absolventul expune cunoștințe privind conceptele și tehnologiile de automatizare a proceselor de afaceri și a bazelor de date specifice domeniului economic",
+          "Studentul/Absolventul descrie arhitectura și componentele sistemelor ERP (Enterprise Resource Planning)",
+          "Studentul/Absolventul identifică modulele funcționale ale sistemelor integrate (financiar, HR, producție, vânzări)"
+        ],
+        "skills": [
+          "Studentul/Absolventul utilizează instrumente de automatizare, pentru a automatiza sarcinile repetitive în activitățile economice",
+          "Studentul/Absolventul creează și administrează baze de date economice pentru stocarea și analiza informațiilor",
+          "Studentul/Absolventul identifică procesele de afaceri care pot fi automatizate",
+          "Studentul/Absolventul configurează și customizează sisteme ERP pentru nevoile organizaționale specifice",
+          "Studentul/Absolventul implementează fluxuri de lucru și procese de business în sistemele integrate"
+        ],
+        "responsibility_autonomy": [
+          "Studentul/Absolventul verifică și monitorizează corectitudinea proceselor automatizate, asigurând acuratețea datelor și conformitatea cu reglementările în vigoare",
+          "Studentul/Absolventul conduce autonom proiecte de implementare a sistemelor informatice integrate"
+        ]
+      }
+    },
+    {
+      "code": "CBGI0121",
+      "name_hu": "Digitális információ gazdasága üzlettel alkalmazásokkal",
+      "name_ro": "Economia informației digitale cu aplicații în afaceri",
+      "name_en": "Economics of Digital Information with Business Applications",
+      "credits": 4,
+      "year": 3,
+      "semester": 6,
+      "category": "DS",
+      "course_type": "DOP",
+      "lecture_hours": 1,
+      "seminar_hours": 0,
+      "lab_hours": 2,
+      "project_hours": 0,
+      "exam_type": "E",
+      "learning_outcomes": {
+        "knowledge": [
+          "Studentul/Absolventul identifică componentele proceselor economice complexe și ale sistemelor micro și macro-economice și sociale și le asociază modele economico-matematice de optimizare",
+          "Studentul/Absolventul descrie impactul digitalizării asupra modelelor de business și economiei",
+          "Studentul/Absolventul identifică conceptele de economie digitală și transformarea digitală"
+        ],
+        "skills": [
+          "Studentul/Absolventul utilizează pachete software care implementează algoritmii de optimizare matematică dedicați fundamentării deciziilor organizației",
+          "Studentul/Absolventul analizează oportunități de business în economia digitală",
+          "Studentul/Absolventul dezvoltă strategii de transformare digitală pentru organizații"
+        ],
+        "responsibility_autonomy": [
+          "Studentul/Absolventul utilizează un limbaj și un raționament corect și bine justificat, bazat pe metodele cantitative de analiză și modelare în adoptarea deciziilor în activitatea organizațiilor economice",
+          "Studentul/Absolventul elaborează în mod individual și în echipă soluții pentru probleme economice de complexitate medie",
+          "Studentul/Absolventul elaborează autonom strategii de digitalizare pentru mediul de afaceri"
+        ]
+      }
+    },
+    {
+      "code": "CBEI0350",
+      "name_hu": "Szoftver csomagok",
+      "name_ro": "Pachete software",
+      "name_en": "Software Packages",
+      "credits": 4,
+      "year": 3,
+      "semester": 6,
+      "category": "DS",
+      "course_type": "DOP",
+      "lecture_hours": 1,
+      "seminar_hours": 0,
+      "lab_hours": 2,
+      "project_hours": 0,
+      "exam_type": "E"
+    },
+    {
+      "code": "CBEI0671",
+      "name_hu": "Szoftverminőség és tesztelés",
+      "name_ro": "Calitate si testare software",
+      "name_en": "Software Quality and Testing",
+      "credits": 4,
+      "year": 3,
+      "semester": 6,
+      "category": "DS",
+      "course_type": "DOP",
+      "lecture_hours": 1,
+      "seminar_hours": 0,
+      "lab_hours": 2,
+      "project_hours": 0,
+      "exam_type": "E"
+    },
+    {
+      "code": "CBEI0381",
+      "name_hu": "Reklámgrafika alapfogalmai",
+      "name_ro": "Conceptele de bază ale graficii publicitare",
+      "name_en": "Basics of Advertising Graphics",
+      "credits": 4,
+      "year": 3,
+      "semester": 6,
+      "category": "DS",
+      "course_type": "DOP",
+      "lecture_hours": 2,
+      "seminar_hours": 0,
+      "lab_hours": 1,
+      "project_hours": 0,
+      "exam_type": "VP",
+      "learning_outcomes": {
+        "knowledge": [
+          "Studentul/Absolventul identifică, recunoaște, descrie și explică conceptele fundamentale privind programarea calculatoarelor și tehnicile de programare de bază, exemplificate printr-un limbaj popular de programare",
+          "Studentul/Absolventul descrie și explică structuri de date, algoritmi, limbaje de programare utilizate în domeniul economic",
+          "Studentul/Absolventul descrie principiile fundamentale de design grafic și compoziție vizuală",
+          "Studentul/Absolventul identifică elementele grafice (culoare, tipografie, imagini) și impactul lor în comunicare"
+        ],
+        "skills": [
+          "Studentul/Absolventul utilizează instrumente pentru proiectarea, implementarea, testarea și depanarea unui program ce folosește construcțiile fundamentale specifice programării",
+          "Studentul/Absolventul scrie cod pentru prelucrarea datelor economice, utilizând limbaje de programare, în context economic",
+          "Studentul/Absolventul creează materiale grafice profesionale pentru activități de marketing",
+          "Studentul/Absolventul utilizează instrumente digitale pentru design grafic și editare de imagini"
+        ],
+        "responsibility_autonomy": [
+          "Studentul/Absolventul proiectează, implementează, testează și depanează programe care folosesc construcțiile fundamentale specifice programării",
+          "Studentul/Absolventul dezvoltă autonom concepte creative pentru campanii publicitare"
+        ]
+      }
+    },
+    {
+      "code": "CBEI0451",
+      "name_hu": "Fejlett webprogramozás",
+      "name_ro": "Programare WEB avansată",
+      "name_en": "Advanced Web Programming",
+      "credits": 4,
+      "year": 3,
+      "semester": 6,
+      "category": "DS",
+      "course_type": "DOP",
+      "lecture_hours": 2,
+      "seminar_hours": 0,
+      "lab_hours": 1,
+      "project_hours": 0,
+      "exam_type": "VP"
+    },
+    {
+      "code": "CBLP0010",
+      "name_hu": "Diploma munka",
+      "name_ro": "Elaborarea lucrării de licență",
+      "name_en": "Bachelor Thesis",
+      "credits": 0,
+      "year": 3,
+      "semester": 6,
+      "category": "DS",
+      "course_type": "DOB",
+      "lecture_hours": 0,
+      "seminar_hours": 0,
+      "lab_hours": 0,
+      "project_hours": 0,
+      "exam_type": "E"
+    },
+    {
+      "code": "CBEM0171",
+      "name_hu": "Elemi matematika I.",
+      "name_ro": "Matematică elementară I.",
+      "name_en": "Elementary Mathematics I.",
+      "credits": 2,
+      "year": 1,
+      "semester": 1,
+      "category": "DF",
+      "course_type": "DFA",
+      "lecture_hours": 0,
+      "seminar_hours": 2,
+      "lab_hours": 0,
+      "project_hours": 0,
+      "exam_type": "VP"
+    },
+    {
+      "code": "CBEM0172",
+      "name_hu": "Elemi matematika II.",
+      "name_ro": "Matematică elementară II.",
+      "name_en": "Elementary Mathematics II.",
+      "credits": 2,
+      "year": 1,
+      "semester": 2,
+      "category": "DF",
+      "course_type": "DFA",
+      "lecture_hours": 0,
+      "seminar_hours": 2,
+      "lab_hours": 0,
+      "project_hours": 0,
+      "exam_type": "VP"
+    },
+    {
+      "code": "CBEI0701",
+      "name_hu": "Robotika",
+      "name_ro": "Robotică",
+      "name_en": "Robotics",
+      "credits": 2,
+      "year": 1,
+      "semester": 2,
+      "category": "DF",
+      "course_type": "DFA",
+      "lecture_hours": 1,
+      "seminar_hours": 0,
+      "lab_hours": 2,
+      "project_hours": 0,
+      "exam_type": "VP"
+    },
+    {
+      "code": "CBEM0173",
+      "name_hu": "Csillagászat és űrtudomány alapjai",
+      "name_ro": "Bazele Astronomiei și ale științei spațiale",
+      "name_en": "Fundamentals of Astronomy and Space Science",
+      "credits": 2,
+      "year": 2,
+      "semester": 3,
+      "category": "DF",
+      "course_type": "DFA",
+      "lecture_hours": 0,
+      "seminar_hours": 2,
+      "lab_hours": 0,
+      "project_hours": 0,
+      "exam_type": "VP"
+    }
+  ]
+}

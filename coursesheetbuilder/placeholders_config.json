@@ -1,0 +1,1378 @@
+{
+    "sections": {
+        "meta": {
+            "section_key": "meta",
+            "title": "Meta információk",
+            "display_order": 0,
+            "placeholders": [
+                {
+                    "name": "year",
+                    "db_field": "academic_year",
+                    "description": "pentru anul universitar (pl. 2025/26)",
+                    "data_source": "database",
+                    "source_table": "academic_years",
+                    "source_column": "year_code",
+                    "output_format": "text",
+                    "is_editable": false,
+                    "form_section": null,
+                    "display_order": 1
+                },
+                {
+                    "name": "decision_nr",
+                    "db_field": "faculty_decision_number",
+                    "description": "Aprobat prin decizia Consiliului Facultăţii nr.",
+                    "data_source": "editable",
+                    "output_format": "text",
+                    "is_editable": true,
+                    "form_section": "meta_info",
+                    "form_type": "text",
+                    "display_order": 2,
+                    "validation": {
+                        "required": false,
+                        "max_length": 100
+                    }
+                }
+            ]
+        },
+        "1_program_info": {
+            "section_key": "1_program_info",
+            "title": "1. Date despre program",
+            "display_order": 1,
+            "placeholders": [
+                {
+                    "name": "inst",
+                    "db_field": "institution",
+                    "description": "1.1. Instituția de învățământ superior",
+                    "data_source": "static",
+                    "enum_class": "App\\Enums\\UniversityInfo",
+                    "enum_case": "INSTITUTION_NAME",
+                    "enum_lang": "ro",
+                    "output_format": "text",
+                    "is_editable": false,
+                    "form_section": null,
+                    "display_order": 3
+                },
+                {
+                    "name": "fac",
+                    "db_field": "faculty",
+                    "description": "1.2. Facultatea / DPPD",
+                    "data_source": "static",
+                    "enum_class": "App\\Enums\\UniversityInfo",
+                    "enum_case": "FACULTY_NAME",
+                    "enum_lang": "ro",
+                    "output_format": "text",
+                    "is_editable": false,
+                    "form_section": null,
+                    "display_order": 4
+                },
+                {
+                    "name": "field",
+                    "db_field": "field_of_study",
+                    "description": "1.3. Domeniul de studii",
+                    "data_source": "database",
+                    "source_table": "programs",
+                    "source_column": "domain",
+                    "output_format": "text",
+                    "is_editable": false,
+                    "form_section": null,
+                    "display_order": 5
+                },
+                {
+                    "name": "cycle",
+                    "db_field": "cycle",
+                    "description": "1.4. Ciclul de studii",
+                    "data_source": "database",
+                    "source_table": "programs",
+                    "source_column": "cycle",
+                    "output_format": "text",
+                    "is_editable": false,
+                    "form_section": null,
+                    "display_order": 6
+                },
+                {
+                    "name": "prog",
+                    "db_field": "program",
+                    "description": "1.5. Programul de studiu",
+                    "data_source": "database",
+                    "source_table": "programs",
+                    "source_column": "name_ro",
+                    "output_format": "text",
+                    "is_editable": false,
+                    "form_section": null,
+                    "display_order": 7
+                },
+                {
+                    "name": "qual",
+                    "db_field": "qualification",
+                    "description": "1.6. Calificarea",
+                    "data_source": "database",
+                    "source_table": "programs",
+                    "source_column": "qualification",
+                    "output_format": "text",
+                    "is_editable": false,
+                    "form_section": null,
+                    "display_order": 8
+                }
+            ]
+        },
+        "2_discipline_info": {
+            "section_key": "2_discipline_info",
+            "title": "2. Date despre disciplină",
+            "display_order": 2,
+            "placeholders": [
+                {
+                    "name": "dep",
+                    "db_field": "department",
+                    "description": "2.0. Departamentul",
+                    "data_source": "database",
+                    "source_table": "departments",
+                    "source_column": "name_ro",
+                    "output_format": "text",
+                    "is_editable": false,
+                    "form_section": null,
+                    "display_order": 9
+                },
+                {
+                    "name": "disc_name",
+                    "db_field": "discipline_name",
+                    "description": "2.1. Denumirea disciplinei",
+                    "data_source": "database",
+                    "source_table": "curriculum_courses",
+                    "source_column": "course_name_ro",
+                    "output_format": "text",
+                    "is_editable": false,
+                    "form_section": null,
+                    "display_order": 10
+                },
+                {
+                    "name": "act_integral",
+                    "db_field": "activity_type_integral",
+                    "description": "2.2. Tipul activității - Asistat integral",
+                    "data_source": "computed",
+                    "compute_method": "getActivityTypeCheckmark",
+                    "compute_params": {
+                        "type": "Asistat integral"
+                    },
+                    "output_format": "text",
+                    "is_editable": false,
+                    "form_section": null,
+                    "display_order": 11
+                },
+                {
+                    "name": "act_partial",
+                    "db_field": "activity_type_partial",
+                    "description": "2.2. Tipul activității - Asistat parțial",
+                    "data_source": "computed",
+                    "compute_method": "getActivityTypeCheckmark",
+                    "compute_params": {
+                        "type": "Asistat parțial"
+                    },
+                    "output_format": "text",
+                    "is_editable": false,
+                    "form_section": null,
+                    "display_order": 12
+                },
+                {
+                    "name": "act_unassist",
+                    "db_field": "activity_type_unassisted",
+                    "description": "2.2. Tipul activității - Neasistat",
+                    "data_source": "computed",
+                    "compute_method": "getActivityTypeCheckmark",
+                    "compute_params": {
+                        "type": "Neasistat"
+                    },
+                    "output_format": "text",
+                    "is_editable": false,
+                    "form_section": null,
+                    "display_order": 13
+                },
+                {
+                    "name": "course_holder",
+                    "db_field": "course_holder",
+                    "description": "2.3. Titularul disciplinei / Titularul cursului",
+                    "data_source": "database",
+                    "source_table": "teachers",
+                    "source_method": "getFormattedCourseLeaderName",
+                    "output_format": "text",
+                    "is_editable": false,
+                    "form_section": null,
+                    "display_order": 14
+                },
+                {
+                    "name": "sem_holder",
+                    "db_field": "seminar_holder",
+                    "description": "2.4. Titularul seminarului",
+                    "data_source": "database",
+                    "source_table": "teachers",
+                    "source_method": "getFormattedSeminarLeaderName",
+                    "output_format": "text",
+                    "is_editable": false,
+                    "form_section": null,
+                    "display_order": 15
+                },
+                {
+                    "name": "lab_holder",
+                    "db_field": "laboratory_holder",
+                    "description": "2.4. Titularul laboratorului",
+                    "data_source": "database",
+                    "source_table": "teachers",
+                    "source_method": "getFormattedLabLeaderName",
+                    "output_format": "text",
+                    "is_editable": false,
+                    "form_section": null,
+                    "display_order": 16
+                },
+                {
+                    "name": "proj_holder",
+                    "db_field": "project_holder",
+                    "description": "2.4. Titularul proiectului",
+                    "data_source": "database",
+                    "source_table": "teachers",
+                    "source_method": "getFormattedProjectLeaderName",
+                    "output_format": "text",
+                    "is_editable": false,
+                    "form_section": null,
+                    "display_order": 17
+                },
+                {
+                    "name": "study_year",
+                    "db_field": "study_year",
+                    "description": "2.5. Anul de studiu",
+                    "data_source": "database",
+                    "source_table": "curriculum_courses",
+                    "source_column": "study_year",
+                    "output_format": "text",
+                    "is_editable": false,
+                    "form_section": null,
+                    "display_order": 18
+                },
+                {
+                    "name": "sem",
+                    "db_field": "semester",
+                    "description": "2.6. Semestrul",
+                    "data_source": "database",
+                    "source_table": "curriculum_courses",
+                    "source_column": "semester",
+                    "output_format": "text",
+                    "is_editable": false,
+                    "form_section": null,
+                    "display_order": 19
+                },
+                {
+                    "name": "verif",
+                    "db_field": "verification_form",
+                    "description": "2.7. Forma de verificare",
+                    "data_source": "database",
+                    "source_table": "curriculum_courses",
+                    "source_column": "exam_type",
+                    "output_format": "text",
+                    "is_editable": false,
+                    "form_section": null,
+                    "display_order": 20
+                },
+                {
+                    "name": "disc_type",
+                    "db_field": "discipline_type",
+                    "description": "2.8. Tipul disciplinei",
+                    "data_source": "database",
+                    "source_table": "curriculum_courses",
+                    "source_column": "course_type",
+                    "output_format": "text",
+                    "is_editable": false,
+                    "form_section": null,
+                    "display_order": 21
+                },
+                {
+                    "name": "form_cat",
+                    "db_field": "formative_category",
+                    "description": "2.9. Categoria formativă",
+                    "data_source": "database",
+                    "source_table": "curriculum_courses",
+                    "source_column": "formative_category",
+                    "output_format": "text",
+                    "is_editable": false,
+                    "form_section": null,
+                    "display_order": 22
+                },
+                {
+                    "name": "disc_cat",
+                    "db_field": "discipline_category",
+                    "description": "2.10. Categoria disciplinei",
+                    "data_source": "database",
+                    "source_table": "curriculum_courses",
+                    "source_column": "master_category",
+                    "output_format": "text",
+                    "is_editable": false,
+                    "form_section": null,
+                    "display_order": 23
+                },
+                {
+                    "name": "code",
+                    "db_field": "discipline_code",
+                    "description": "2.11. Codul disciplinei",
+                    "data_source": "database",
+                    "source_table": "curriculum_courses",
+                    "source_column": "course_code",
+                    "output_format": "text",
+                    "is_editable": false,
+                    "form_section": null,
+                    "display_order": 24
+                }
+            ]
+        },
+        "3_time_allocation": {
+            "section_key": "3_time_allocation",
+            "title": "3. Timpul total estimat",
+            "display_order": 3,
+            "placeholders": [
+                {
+                    "name": "hrs_week",
+                    "db_field": "hours_per_week",
+                    "description": "3.1. Număr de ore pe săptămână",
+                    "data_source": "computed",
+                    "compute_method": "calculateWeeklyHours",
+                    "output_format": "text",
+                    "is_editable": false,
+                    "form_section": null,
+                    "display_order": 25
+                },
+                {
+                    "name": "course_hrs",
+                    "db_field": "course_hours",
+                    "description": "3.2. Ore curs",
+                    "data_source": "database",
+                    "source_table": "curriculum_courses",
+                    "source_column": "lecture_hours",
+                    "output_format": "text",
+                    "is_editable": false,
+                    "form_section": null,
+                    "display_order": 26
+                },
+                {
+                    "name": "pract_hrs",
+                    "db_field": "seminar_lab_hours",
+                    "description": "3.3. Ore seminar / laborator / proiect / practică",
+                    "data_source": "computed",
+                    "compute_method": "calculateWeeklyPracticalHours",
+                    "output_format": "text",
+                    "is_editable": false,
+                    "form_section": null,
+                    "display_order": 27
+                },
+                {
+                    "name": "total_hrs",
+                    "db_field": "total_hours",
+                    "description": "3.4. Total ore din planul de învățământ",
+                    "data_source": "computed",
+                    "compute_method": "calculateTotalPlannedHours",
+                    "output_format": "text",
+                    "is_editable": false,
+                    "form_section": null,
+                    "display_order": 28
+                },
+                {
+                    "name": "total_course",
+                    "db_field": "total_course_hours",
+                    "description": "3.5. Total ore curs",
+                    "data_source": "computed",
+                    "compute_method": "calculateTotalCourseHours",
+                    "output_format": "text",
+                    "is_editable": false,
+                    "form_section": null,
+                    "display_order": 29
+                },
+                {
+                    "name": "total_pract",
+                    "db_field": "total_practical_hours",
+                    "description": "3.6. Total ore seminar / laborator / proiect / practică",
+                    "data_source": "computed",
+                    "compute_method": "calculateTotalPracticalHours",
+                    "output_format": "text",
+                    "is_editable": false,
+                    "form_section": null,
+                    "display_order": 30
+                },
+                {
+                    "name": "online_hrs",
+                    "db_field": "online_hours",
+                    "description": "3.4.o. Din care online",
+                    "data_source": "computed",
+                    "compute_method": "calculateTotalOnlineHours",
+                    "output_format": "text",
+                    "is_editable": false,
+                    "form_section": null,
+                    "display_order": 31
+                },
+                {
+                    "name": "online_course",
+                    "db_field": "online_course_hours",
+                    "description": "3.5.o. Ore curs online",
+                    "data_source": "database",
+                    "source_table": "curriculum_courses",
+                    "source_column": "lecture_hours_online",
+                    "output_format": "text",
+                    "is_editable": false,
+                    "form_section": null,
+                    "display_order": 32
+                },
+                {
+                    "name": "online_pract",
+                    "db_field": "online_practical_hours",
+                    "description": "3.6.o. Ore seminar / laborator / proiect / practică online",
+                    "data_source": "computed",
+                    "compute_method": "calculateOnlinePracticalHours",
+                    "output_format": "text",
+                    "is_editable": false,
+                    "form_section": null,
+                    "display_order": 33
+                },
+                {
+                    "name": "credits",
+                    "db_field": "credits",
+                    "description": "3.7. Numărul de puncte de credit",
+                    "data_source": "database",
+                    "source_table": "curriculum_courses",
+                    "source_column": "credits",
+                    "output_format": "text",
+                    "is_editable": false,
+                    "form_section": null,
+                    "display_order": 34
+                },
+                {
+                    "name": "sem_hrs",
+                    "db_field": "total_semester_hours",
+                    "description": "3.8. Total ore pe semestru",
+                    "data_source": "computed",
+                    "compute_method": "calculateSemesterHours",
+                    "output_format": "text",
+                    "is_editable": false,
+                    "form_section": null,
+                    "display_order": 35
+                },
+                {
+                    "name": "indiv_hrs",
+                    "db_field": "individual_study_hours",
+                    "description": "3.9. Total ore studiu individual",
+                    "data_source": "computed",
+                    "compute_method": "calculateIndividualStudyHours",
+                    "output_format": "text",
+                    "is_editable": false,
+                    "form_section": null,
+                    "display_order": 36
+                },
+                {
+                    "name": "manual_hrs",
+                    "db_field": "study_manual_hours",
+                    "description": "3.10.a) Studiul după manual, suport de curs, bibliografie și notițe",
+                    "data_source": "editable",
+                    "output_format": "text",
+                    "is_editable": true,
+                    "form_section": "individual_study",
+                    "form_type": "number",
+                    "display_order": 37,
+                    "validation": {
+                        "required": false,
+                        "min": 0,
+                        "max": 200
+                    }
+                },
+                {
+                    "name": "doc_hrs",
+                    "db_field": "additional_documentation_hours",
+                    "description": "3.10.b) Documentare suplimentară în bibliotecă, platforme electronice și teren",
+                    "data_source": "editable",
+                    "output_format": "text",
+                    "is_editable": true,
+                    "form_section": "individual_study",
+                    "form_type": "number",
+                    "display_order": 38,
+                    "validation": {
+                        "required": false,
+                        "min": 0,
+                        "max": 200
+                    }
+                },
+                {
+                    "name": "prep_hrs",
+                    "db_field": "preparation_hours",
+                    "description": "3.10.c) Pregătire seminarii / laboratoare, teme, referate, portofolii și eseuri",
+                    "data_source": "editable",
+                    "output_format": "text",
+                    "is_editable": true,
+                    "form_section": "individual_study",
+                    "form_type": "number",
+                    "display_order": 39,
+                    "validation": {
+                        "required": false,
+                        "min": 0,
+                        "max": 200
+                    }
+                },
+                {
+                    "name": "tutor_hrs",
+                    "db_field": "tutoring_hours",
+                    "description": "3.10.d) Tutoriat",
+                    "data_source": "editable",
+                    "output_format": "text",
+                    "is_editable": true,
+                    "form_section": "individual_study",
+                    "form_type": "number",
+                    "display_order": 40,
+                    "validation": {
+                        "required": false,
+                        "min": 0,
+                        "max": 200
+                    }
+                },
+                {
+                    "name": "exam_hrs",
+                    "db_field": "examination_hours",
+                    "description": "3.10.e) Examinări",
+                    "data_source": "editable",
+                    "output_format": "text",
+                    "is_editable": true,
+                    "form_section": "individual_study",
+                    "form_type": "number",
+                    "display_order": 41,
+                    "validation": {
+                        "required": false,
+                        "min": 0,
+                        "max": 200
+                    }
+                },
+                {
+                    "name": "other_hrs",
+                    "db_field": "other_activities_hours",
+                    "description": "3.10.f) Alte activități",
+                    "data_source": "editable",
+                    "output_format": "text",
+                    "is_editable": true,
+                    "form_section": "individual_study",
+                    "form_type": "number",
+                    "display_order": 42,
+                    "validation": {
+                        "required": false,
+                        "min": 0,
+                        "max": 200
+                    }
+                }
+            ]
+        },
+        "4_prerequisites": {
+            "section_key": "4_prerequisites",
+            "title": "4. Precondiții",
+            "display_order": 4,
+            "placeholders": [
+                {
+                    "name": "prereq_curr",
+                    "db_field": "curriculum_prerequisites",
+                    "description": "4.1. Precondiții de curriculum",
+                    "data_source": "editable",
+                    "output_format": "text",
+                    "is_editable": true,
+                    "form_section": "prerequisites",
+                    "form_type": "textarea",
+                    "display_order": 43,
+                    "validation": {
+                        "required": false,
+                        "max_length": 500
+                    }
+                },
+                {
+                    "name": "prereq_comp",
+                    "db_field": "competence_prerequisites",
+                    "description": "4.2. Precondiții de competențe",
+                    "data_source": "editable",
+                    "output_format": "text",
+                    "is_editable": true,
+                    "form_section": "prerequisites",
+                    "form_type": "textarea",
+                    "display_order": 44,
+                    "validation": {
+                        "required": false,
+                        "max_length": 500
+                    }
+                }
+            ]
+        },
+        "5_conditions": {
+            "section_key": "5_conditions",
+            "title": "5. Condiții",
+            "display_order": 5,
+            "placeholders": [
+                {
+                    "name": "cond_course",
+                    "db_field": "course_conditions",
+                    "description": "5.1. Condiții de desfășurare a cursului",
+                    "data_source": "editable",
+                    "output_format": "text",
+                    "is_editable": true,
+                    "form_section": "conditions",
+                    "form_type": "textarea",
+                    "display_order": 45,
+                    "validation": {
+                        "required": false,
+                        "max_length": 500
+                    }
+                },
+                {
+                    "name": "cond_pract",
+                    "db_field": "practical_conditions",
+                    "description": "5.2. Condiții de desfășurare a seminarului / laboratorului / proiectului / practicii",
+                    "data_source": "editable",
+                    "output_format": "text",
+                    "is_editable": true,
+                    "form_section": "conditions",
+                    "form_type": "textarea",
+                    "display_order": 46,
+                    "validation": {
+                        "required": false,
+                        "max_length": 500
+                    }
+                }
+            ]
+        },
+        "6_learning_outcomes": {
+            "section_key": "6_learning_outcomes",
+            "title": "6. Rezultate ale învățării",
+            "display_order": 6,
+            "placeholders": [
+                {
+                    "name": "learn_know",
+                    "db_field": "learning_knowledge",
+                    "description": "6. Rezultate ale învățării - Cunoștințe",
+                    "data_source": "database",
+                    "source_table": "curriculum_courses",
+                    "source_column": "learning_outcomes_knowledge",
+                    "output_format": "bullet_list",
+                    "is_editable": false,
+                    "form_section": null,
+                    "display_order": 47
+                },
+                {
+                    "name": "learn_skills",
+                    "db_field": "learning_skills",
+                    "description": "6. Rezultate ale învățării - Aptitudini",
+                    "data_source": "database",
+                    "source_table": "curriculum_courses",
+                    "source_column": "learning_outcomes_skills",
+                    "output_format": "bullet_list",
+                    "is_editable": false,
+                    "form_section": null,
+                    "display_order": 48
+                },
+                {
+                    "name": "learn_resp",
+                    "db_field": "learning_responsibility",
+                    "description": "6. Rezultate ale învățării - Responsabilitate și autonomie",
+                    "data_source": "database",
+                    "source_table": "curriculum_courses",
+                    "source_column": "learning_outcomes_responsibility",
+                    "output_format": "bullet_list",
+                    "is_editable": false,
+                    "form_section": null,
+                    "display_order": 49
+                }
+            ]
+        },
+        "7_objectives": {
+            "section_key": "7_objectives",
+            "title": "7. Obiectivele disciplinei",
+            "display_order": 7,
+            "placeholders": [
+                {
+                    "name": "obj_gen",
+                    "db_field": "general_objective",
+                    "description": "7.1. Obiectivul general al disciplinei",
+                    "data_source": "editable",
+                    "output_format": "text",
+                    "is_editable": true,
+                    "form_section": "objectives",
+                    "form_type": "textarea",
+                    "display_order": 50,
+                    "validation": {
+                        "required": true,
+                        "max_length": 1000
+                    }
+                },
+                {
+                    "name": "obj_spec",
+                    "db_field": "specific_objectives",
+                    "description": "7.2. Obiectivele specifice",
+                    "data_source": "editable",
+                    "output_format": "text",
+                    "is_editable": true,
+                    "form_section": "objectives",
+                    "form_type": "textarea",
+                    "display_order": 51,
+                    "validation": {
+                        "required": true,
+                        "max_length": 2000
+                    }
+                }
+            ]
+        },
+        "8_content": {
+            "section_key": "8_content",
+            "title": "8. Conținuturi",
+            "display_order": 8,
+            "placeholders": [
+                {
+                    "name": "course_topic",
+                    "db_field": "course_topics",
+                    "description": "8.1. Curs - Temă",
+                    "data_source": "editable",
+                    "output_format": "table_row",
+                    "is_editable": true,
+                    "form_section": "content_course",
+                    "form_type": "repeater",
+                    "display_order": 52,
+                    "table_columns": [
+                        {
+                            "placeholder": "course_topic",
+                            "field": "topic",
+                            "label": "Temă"
+                        },
+                        {
+                            "placeholder": "course_hrs_cont",
+                            "field": "hours",
+                            "label": "Ore alocat"
+                        }
+                    ]
+                },
+                {
+                    "name": "course_methods",
+                    "db_field": "course_teaching_methods",
+                    "description": "8.1. Curs - Metode de predare",
+                    "data_source": "editable",
+                    "output_format": "text",
+                    "is_editable": true,
+                    "form_section": "content_course",
+                    "form_type": "textarea",
+                    "display_order": 54,
+                    "validation": {
+                        "required": false,
+                        "max_length": 500
+                    }
+                },
+                {
+                    "name": "bib_course",
+                    "db_field": "bibliography_course",
+                    "description": "8.1. Curs - Bibliografie",
+                    "data_source": "editable",
+                    "output_format": "numbered_list",
+                    "is_editable": true,
+                    "form_section": "content_course",
+                    "form_type": "repeater",
+                    "list_field": "citation",
+                    "display_order": 55
+                },
+                {
+                    "name": "sem_topic",
+                    "db_field": "seminar_topics",
+                    "description": "8.2. Seminar - Temă",
+                    "data_source": "editable",
+                    "output_format": "table_row",
+                    "is_editable": true,
+                    "form_section": "content_seminar",
+                    "form_type": "repeater",
+                    "display_order": 56,
+                    "table_columns": [
+                        {
+                            "placeholder": "sem_topic",
+                            "field": "topic",
+                            "label": "Temă"
+                        },
+                        {
+                            "placeholder": "sem_hrs_cont",
+                            "field": "hours",
+                            "label": "Ore alocat"
+                        }
+                    ]
+                },
+                {
+                    "name": "sem_methods",
+                    "db_field": "seminar_teaching_methods",
+                    "description": "8.2. Seminar - Metode de predare",
+                    "data_source": "editable",
+                    "output_format": "text",
+                    "is_editable": true,
+                    "form_section": "content_seminar",
+                    "form_type": "textarea",
+                    "display_order": 58,
+                    "validation": {
+                        "required": false,
+                        "max_length": 500
+                    }
+                },
+                {
+                    "name": "bib_sem",
+                    "db_field": "bibliography_seminar",
+                    "description": "8.2. Seminar - Bibliografie",
+                    "data_source": "editable",
+                    "output_format": "numbered_list",
+                    "is_editable": true,
+                    "form_section": "content_seminar",
+                    "form_type": "repeater",
+                    "list_field": "citation",
+                    "display_order": 59
+                },
+                {
+                    "name": "lab_task",
+                    "db_field": "laboratory_tasks",
+                    "description": "8.3. Laborator - Sarcină",
+                    "data_source": "editable",
+                    "output_format": "table_row",
+                    "is_editable": true,
+                    "form_section": "content_laboratory",
+                    "form_type": "repeater",
+                    "display_order": 60,
+                    "table_columns": [
+                        {
+                            "placeholder": "lab_task",
+                            "field": "task",
+                            "label": "Sarcină"
+                        },
+                        {
+                            "placeholder": "lab_hrs_cont",
+                            "field": "hours",
+                            "label": "Ore alocat"
+                        }
+                    ]
+                },
+                {
+                    "name": "lab_methods",
+                    "db_field": "laboratory_teaching_methods",
+                    "description": "8.3. Laborator - Metode de predare",
+                    "data_source": "editable",
+                    "output_format": "text",
+                    "is_editable": true,
+                    "form_section": "content_laboratory",
+                    "form_type": "textarea",
+                    "display_order": 62,
+                    "validation": {
+                        "required": false,
+                        "max_length": 500
+                    }
+                },
+                {
+                    "name": "bib_lab",
+                    "db_field": "bibliography_laboratory",
+                    "description": "8.3. Laborator - Bibliografie",
+                    "data_source": "editable",
+                    "output_format": "numbered_list",
+                    "is_editable": true,
+                    "form_section": "content_laboratory",
+                    "form_type": "repeater",
+                    "list_field": "citation",
+                    "display_order": 63
+                },
+                {
+                    "name": "proj_content",
+                    "db_field": "project_content",
+                    "description": "8.4. Proiect - Conținut",
+                    "data_source": "editable",
+                    "output_format": "table_row",
+                    "is_editable": true,
+                    "form_section": "content_project",
+                    "form_type": "repeater",
+                    "display_order": 64,
+                    "table_columns": [
+                        {
+                            "placeholder": "proj_content",
+                            "field": "content",
+                            "label": "Conținut"
+                        },
+                        {
+                            "placeholder": "proj_hrs_cont",
+                            "field": "hours",
+                            "label": "Ore alocat"
+                        }
+                    ]
+                },
+                {
+                    "name": "proj_methods",
+                    "db_field": "project_teaching_methods",
+                    "description": "8.4. Proiect - Metode de predare",
+                    "data_source": "editable",
+                    "output_format": "text",
+                    "is_editable": true,
+                    "form_section": "content_project",
+                    "form_type": "textarea",
+                    "display_order": 66,
+                    "validation": {
+                        "required": false,
+                        "max_length": 500
+                    }
+                },
+                {
+                    "name": "bib_proj",
+                    "db_field": "bibliography_project",
+                    "description": "8.4. Proiect - Bibliografie",
+                    "data_source": "editable",
+                    "output_format": "numbered_list",
+                    "is_editable": true,
+                    "form_section": "content_project",
+                    "form_type": "repeater",
+                    "list_field": "citation",
+                    "display_order": 67
+                },
+                {
+                    "name": "pract_content",
+                    "db_field": "practice_content",
+                    "description": "8.5. Practică - Conținut",
+                    "data_source": "editable",
+                    "output_format": "table_row",
+                    "is_editable": true,
+                    "form_section": "content_practice",
+                    "form_type": "repeater",
+                    "display_order": 68,
+                    "table_columns": [
+                        {
+                            "placeholder": "pract_content",
+                            "field": "content",
+                            "label": "Conținut"
+                        },
+                        {
+                            "placeholder": "pract_hrs_cont",
+                            "field": "hours",
+                            "label": "Ore alocat"
+                        }
+                    ]
+                },
+                {
+                    "name": "pract_methods",
+                    "db_field": "practice_teaching_methods",
+                    "description": "8.5. Practică - Metode de predare",
+                    "data_source": "editable",
+                    "output_format": "text",
+                    "is_editable": true,
+                    "form_section": "content_practice",
+                    "form_type": "textarea",
+                    "display_order": 70,
+                    "validation": {
+                        "required": false,
+                        "max_length": 500
+                    }
+                },
+                {
+                    "name": "bib_pract",
+                    "db_field": "bibliography_practice",
+                    "description": "8.5. Practică - Bibliografie",
+                    "data_source": "editable",
+                    "output_format": "numbered_list",
+                    "is_editable": true,
+                    "form_section": "content_practice",
+                    "form_type": "repeater",
+                    "list_field": "citation",
+                    "display_order": 71
+                }
+            ]
+        },
+        "9_alignment": {
+            "section_key": "9_alignment",
+            "title": "9. Coroborarea conținuturilor disciplinei",
+            "display_order": 9,
+            "placeholders": [
+                {
+                    "name": "alignment",
+                    "db_field": "alignment_content",
+                    "description": "9. Coroborarea conținuturilor disciplinei cu așteptările reprezentanților comunității epistemice, asociațiilor profesionale și angajatori",
+                    "data_source": "editable",
+                    "output_format": "text",
+                    "is_editable": true,
+                    "form_section": "alignment",
+                    "form_type": "textarea",
+                    "display_order": 72,
+                    "validation": {
+                        "required": false,
+                        "max_length": 1000
+                    }
+                }
+            ]
+        },
+        "10_evaluation": {
+            "section_key": "10_evaluation",
+            "title": "10. Evaluare",
+            "display_order": 10,
+            "placeholders": [
+                {
+                    "name": "eval_cond",
+                    "db_field": "evaluation_conditions",
+                    "description": "10.A. Condiții de îndeplinit pentru prezentarea la evaluare",
+                    "data_source": "editable",
+                    "output_format": "text",
+                    "is_editable": true,
+                    "form_section": "evaluation",
+                    "form_type": "textarea",
+                    "display_order": 73,
+                    "validation": {
+                        "required": false,
+                        "max_length": 1000
+                    }
+                },
+                {
+                    "name": "course_crit_1",
+                    "db_field": "course_evaluation_criteria_1",
+                    "description": "10.B. Curs - Sor 1 - Criterii de evaluare",
+                    "data_source": "editable",
+                    "output_format": "text",
+                    "is_editable": true,
+                    "form_section": "evaluation",
+                    "form_type": "textarea",
+                    "display_order": 74,
+                    "validation": {
+                        "required": false,
+                        "max_length": 500
+                    }
+                },
+                {
+                    "name": "course_meth_1",
+                    "db_field": "course_evaluation_methods_1",
+                    "description": "10.B. Curs - Sor 1 - Metode de evaluare",
+                    "data_source": "editable",
+                    "output_format": "text",
+                    "is_editable": true,
+                    "form_section": "evaluation",
+                    "form_type": "textarea",
+                    "display_order": 75,
+                    "validation": {
+                        "required": false,
+                        "max_length": 500
+                    }
+                },
+                {
+                    "name": "course_wgt_1",
+                    "db_field": "course_evaluation_weight_1",
+                    "description": "10.B. Curs - Sor 1 - Pondere din nota finală",
+                    "data_source": "editable",
+                    "output_format": "text",
+                    "is_editable": true,
+                    "form_section": "evaluation",
+                    "form_type": "text",
+                    "display_order": 76,
+                    "validation": {
+                        "required": false,
+                        "max_length": 10
+                    }
+                },
+                {
+                    "name": "course_crit_2",
+                    "db_field": "course_evaluation_criteria_2",
+                    "description": "10.B. Curs - Sor 2 - Criterii de evaluare",
+                    "data_source": "editable",
+                    "output_format": "text",
+                    "is_editable": true,
+                    "form_section": "evaluation",
+                    "form_type": "textarea",
+                    "display_order": 77,
+                    "validation": {
+                        "required": false,
+                        "max_length": 500
+                    }
+                },
+                {
+                    "name": "course_meth_2",
+                    "db_field": "course_evaluation_methods_2",
+                    "description": "10.B. Curs - Sor 2 - Metode de evaluare",
+                    "data_source": "editable",
+                    "output_format": "text",
+                    "is_editable": true,
+                    "form_section": "evaluation",
+                    "form_type": "textarea",
+                    "display_order": 78,
+                    "validation": {
+                        "required": false,
+                        "max_length": 500
+                    }
+                },
+                {
+                    "name": "course_wgt_2",
+                    "db_field": "course_evaluation_weight_2",
+                    "description": "10.B. Curs - Sor 2 - Pondere din nota finală",
+                    "data_source": "editable",
+                    "output_format": "text",
+                    "is_editable": true,
+                    "form_section": "evaluation",
+                    "form_type": "text",
+                    "display_order": 79,
+                    "validation": {
+                        "required": false,
+                        "max_length": 10
+                    }
+                },
+                {
+                    "name": "sem_crit",
+                    "db_field": "seminar_evaluation_criteria",
+                    "description": "10.B. Seminar - Criterii de evaluare",
+                    "data_source": "editable",
+                    "output_format": "text",
+                    "is_editable": true,
+                    "form_section": "evaluation",
+                    "form_type": "textarea",
+                    "display_order": 80,
+                    "validation": {
+                        "required": false,
+                        "max_length": 500
+                    }
+                },
+                {
+                    "name": "sem_meth",
+                    "db_field": "seminar_evaluation_methods",
+                    "description": "10.B. Seminar - Metode de evaluare",
+                    "data_source": "editable",
+                    "output_format": "text",
+                    "is_editable": true,
+                    "form_section": "evaluation",
+                    "form_type": "textarea",
+                    "display_order": 81,
+                    "validation": {
+                        "required": false,
+                        "max_length": 500
+                    }
+                },
+                {
+                    "name": "sem_wgt",
+                    "db_field": "seminar_evaluation_weight",
+                    "description": "10.B. Seminar - Pondere din nota finală",
+                    "data_source": "editable",
+                    "output_format": "text",
+                    "is_editable": true,
+                    "form_section": "evaluation",
+                    "form_type": "text",
+                    "display_order": 82,
+                    "validation": {
+                        "required": false,
+                        "max_length": 10
+                    }
+                },
+                {
+                    "name": "lab_crit",
+                    "db_field": "laboratory_evaluation_criteria",
+                    "description": "10.B. Laborator - Criterii de evaluare",
+                    "data_source": "editable",
+                    "output_format": "text",
+                    "is_editable": true,
+                    "form_section": "evaluation",
+                    "form_type": "textarea",
+                    "display_order": 83,
+                    "validation": {
+                        "required": false,
+                        "max_length": 500
+                    }
+                },
+                {
+                    "name": "lab_meth",
+                    "db_field": "laboratory_evaluation_methods",
+                    "description": "10.B. Laborator - Metode de evaluare",
+                    "data_source": "editable",
+                    "output_format": "text",
+                    "is_editable": true,
+                    "form_section": "evaluation",
+                    "form_type": "textarea",
+                    "display_order": 84,
+                    "validation": {
+                        "required": false,
+                        "max_length": 500
+                    }
+                },
+                {
+                    "name": "lab_wgt",
+                    "db_field": "laboratory_evaluation_weight",
+                    "description": "10.B. Laborator - Pondere din nota finală",
+                    "data_source": "editable",
+                    "output_format": "text",
+                    "is_editable": true,
+                    "form_section": "evaluation",
+                    "form_type": "text",
+                    "display_order": 85,
+                    "validation": {
+                        "required": false,
+                        "max_length": 10
+                    }
+                },
+                {
+                    "name": "proj_crit",
+                    "db_field": "project_evaluation_criteria",
+                    "description": "10.B. Proiect - Criterii de evaluare",
+                    "data_source": "editable",
+                    "output_format": "text",
+                    "is_editable": true,
+                    "form_section": "evaluation",
+                    "form_type": "textarea",
+                    "display_order": 86,
+                    "validation": {
+                        "required": false,
+                        "max_length": 500
+                    }
+                },
+                {
+                    "name": "proj_meth",
+                    "db_field": "project_evaluation_methods",
+                    "description": "10.B. Proiect - Metode de evaluare",
+                    "data_source": "editable",
+                    "output_format": "text",
+                    "is_editable": true,
+                    "form_section": "evaluation",
+                    "form_type": "textarea",
+                    "display_order": 87,
+                    "validation": {
+                        "required": false,
+                        "max_length": 500
+                    }
+                },
+                {
+                    "name": "proj_wgt",
+                    "db_field": "project_evaluation_weight",
+                    "description": "10.B. Proiect - Pondere din nota finală",
+                    "data_source": "editable",
+                    "output_format": "text",
+                    "is_editable": true,
+                    "form_section": "evaluation",
+                    "form_type": "text",
+                    "display_order": 88,
+                    "validation": {
+                        "required": false,
+                        "max_length": 10
+                    }
+                },
+                {
+                    "name": "pract_crit",
+                    "db_field": "practice_evaluation_criteria",
+                    "description": "10.B. Practică - Criterii de evaluare",
+                    "data_source": "editable",
+                    "output_format": "text",
+                    "is_editable": true,
+                    "form_section": "evaluation",
+                    "form_type": "textarea",
+                    "display_order": 89,
+                    "validation": {
+                        "required": false,
+                        "max_length": 500
+                    }
+                },
+                {
+                    "name": "pract_meth",
+                    "db_field": "practice_evaluation_methods",
+                    "description": "10.B. Practică - Metode de evaluare",
+                    "data_source": "editable",
+                    "output_format": "text",
+                    "is_editable": true,
+                    "form_section": "evaluation",
+                    "form_type": "textarea",
+                    "display_order": 90,
+                    "validation": {
+                        "required": false,
+                        "max_length": 500
+                    }
+                },
+                {
+                    "name": "pract_wgt",
+                    "db_field": "practice_evaluation_weight",
+                    "description": "10.B. Practică - Pondere din nota finală",
+                    "data_source": "editable",
+                    "output_format": "text",
+                    "is_editable": true,
+                    "form_section": "evaluation",
+                    "form_type": "text",
+                    "display_order": 91,
+                    "validation": {
+                        "required": false,
+                        "max_length": 10
+                    }
+                },
+                {
+                    "name": "min_perf",
+                    "db_field": "minimum_performance_standards",
+                    "description": "10.6. Standard minim de performanță",
+                    "data_source": "editable",
+                    "output_format": "text",
+                    "is_editable": true,
+                    "form_section": "evaluation",
+                    "form_type": "textarea",
+                    "display_order": 92,
+                    "validation": {
+                        "required": false,
+                        "max_length": 1000
+                    }
+                }
+            ]
+        },
+        "11_signatures": {
+            "section_key": "11_signatures",
+            "title": "Semnături și date",
+            "display_order": 11,
+            "placeholders": [
+                {
+                    "name": "compl_date",
+                    "db_field": "completion_date",
+                    "description": "Data completării",
+                    "data_source": "computed",
+                    "compute_method": "getCurrentDate",
+                    "output_format": "text",
+                    "is_editable": false,
+                    "form_section": null,
+                    "display_order": 93
+                },
+                {
+                    "name": "sign_course",
+                    "db_field": "course_holder_signature",
+                    "description": "Semnătura titularului disciplinei",
+                    "data_source": "database",
+                    "source_method": "getCourseLeaderSignature",
+                    "output_format": "text",
+                    "is_editable": false,
+                    "form_section": null,
+                    "display_order": 94
+                },
+                {
+                    "name": "sign_appl",
+                    "db_field": "application_holder_signature",
+                    "description": "Semnătura titularului/rilor de aplicații",
+                    "data_source": "database",
+                    "source_method": "getApplicationLeadersSignature",
+                    "output_format": "text",
+                    "is_editable": false,
+                    "form_section": null,
+                    "display_order": 95
+                },
+                {
+                    "name": "appr_date",
+                    "db_field": "department_approval_date",
+                    "description": "Data avizării în departament",
+                    "data_source": "editable",
+                    "output_format": "text",
+                    "is_editable": true,
+                    "form_section": "signatures",
+                    "form_type": "date",
+                    "display_order": 96,
+                    "validation": {
+                        "required": false
+                    }
+                },
+                {
+                    "name": "sign_dir",
+                    "db_field": "department_director_signature",
+                    "description": "Semnătura directorului de departament",
+                    "data_source": "database",
+                    "source_method": "getDepartmentDirectorSignature",
+                    "output_format": "text",
+                    "is_editable": false,
+                    "form_section": null,
+                    "display_order": 97
+                },
+                {
+                    "name": "sign_coord",
+                    "db_field": "program_coordinator_signature",
+                    "description": "Semnătura responsabilului programului de studii",
+                    "data_source": "database",
+                    "source_method": "getProgramCoordinatorSignature",
+                    "output_format": "text",
+                    "is_editable": false,
+                    "form_section": null,
+                    "display_order": 98
+                }
+            ]
+        }
+    }
+}

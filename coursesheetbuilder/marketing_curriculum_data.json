@@ -1,0 +1,211 @@
+{
+  "curriculum": {
+    "program": "Marketing",
+    "academic_year": "2025/26"
+  },
+  "courses": [
+    {
+      "code": "CBMR0101",
+      "name_hu": "Marketing alapjai",
+      "name_ro": "Bazele marketingului",
+      "name_en": "Fundamentals of Marketing",
+      "credits": 5,
+      "year": 1,
+      "semester": 1,
+      "category": "DF",
+      "course_type": "DOB",
+      "lecture_hours": 2,
+      "seminar_hours": 2,
+      "lab_hours": 0,
+      "project_hours": 0,
+      "exam_type": "E",
+      "learning_outcomes": {
+        "knowledge": [
+          "Studentul identifică și definește conceptele fundamentale de marketing (nevoi, cerere, ofertă, piață).",
+          "Studentul cunoaște mixul de marketing (cei 4P: produs, preț, plasament, promovare)."
+        ],
+        "skills": [
+          "Studentul utilizează terminologia de specialitate în analiza situațiilor de piață.",
+          "Studentul elaborează analize SWOT introductive pentru produse sau servicii reale."
+        ],
+        "responsibility_autonomy": [
+          "Studentul manifestă atitudine proactivă în analiza oportunităților de marketing.",
+          "Studentul abordează etic campaniile de marketing."
+        ]
+      }
+    },
+    {
+      "code": "CBGG0021",
+      "name_hu": "Mikroökonómia",
+      "name_ro": "Microeconomie",
+      "name_en": "Microeconomics",
+      "credits": 5,
+      "year": 1,
+      "semester": 1,
+      "category": "DF",
+      "course_type": "DOB",
+      "lecture_hours": 2,
+      "seminar_hours": 2,
+      "lab_hours": 0,
+      "project_hours": 0,
+      "exam_type": "E",
+      "learning_outcomes": {
+        "knowledge": [
+          "Studentul înțelege mecanismele pieței, formarea prețurilor și comportamentul consumatorului.",
+          "Studentul clasifică structurile de piață (concurență perfectă, monopol, oligopol)."
+        ],
+        "skills": [
+          "Studentul analizează cererea și oferta pentru anumite bunuri economice.",
+          "Studentul calculează și interpretează elasticitatea cererii și ofertei."
+        ],
+        "responsibility_autonomy": [
+          "Studentul aplică autonomia în rezolvarea problemelor economice de bază."
+        ]
+      }
+    },
+    {
+      "code": "CBGM0011",
+      "name_hu": "Menedzsment",
+      "name_ro": "Management",
+      "name_en": "Management",
+      "credits": 5,
+      "year": 1,
+      "semester": 2,
+      "category": "DF",
+      "course_type": "DOB",
+      "lecture_hours": 2,
+      "seminar_hours": 2,
+      "lab_hours": 0,
+      "project_hours": 0,
+      "exam_type": "E",
+      "learning_outcomes": {
+        "knowledge": [
+          "Studentul recunoaște teoriile și conceptele necesare procesului managerial.",
+          "Studentul identifică funcțiile managementului."
+        ],
+        "skills": [
+          "Studentul analizează procesele organizaționale din perspectiva conducerii eficiente."
+        ],
+        "responsibility_autonomy": [
+          "Studentul acționează responsabil în adoptarea deciziilor manageriale."
+        ]
+      }
+    },
+    {
+      "code": "CBMR0201",
+      "name_hu": "Fogyasztói magatartás",
+      "name_ro": "Comportamentul consumatorului",
+      "name_en": "Consumer Behavior",
+      "credits": 4,
+      "year": 2,
+      "semester": 3,
+      "category": "DS",
+      "course_type": "DOB",
+      "lecture_hours": 2,
+      "seminar_hours": 1,
+      "lab_hours": 0,
+      "project_hours": 0,
+      "exam_type": "E",
+      "learning_outcomes": {
+        "knowledge": [
+          "Studentul cunoaște factorii psihologici, sociali și culturali care influențează decizia de cumpărare.",
+          "Studentul descrie etapele procesului decizional de achiziție."
+        ],
+        "skills": [
+          "Studentul analizează profilul consumatorilor și segmentează piața țintă.",
+          "Studentul identifică nevoile ascunse ale diferitelor grupuri de consumatori."
+        ],
+        "responsibility_autonomy": [
+          "Studentul integrează etica în studierea și targetarea consumatorilor vulnerabili."
+        ]
+      }
+    },
+    {
+      "code": "CBMR0301",
+      "name_hu": "Marketingkutatás",
+      "name_ro": "Cercetări de marketing",
+      "name_en": "Marketing Research",
+      "credits": 5,
+      "year": 2,
+      "semester": 4,
+      "category": "DS",
+      "course_type": "DOB",
+      "lecture_hours": 2,
+      "seminar_hours": 2,
+      "lab_hours": 0,
+      "project_hours": 0,
+      "exam_type": "E",
+      "learning_outcomes": {
+        "knowledge": [
+          "Studentul cunoaște metodologiile cantitative și calitative de cercetare a pieței.",
+          "Studentul definește metodele de eșantionare și colectare a datelor."
+        ],
+        "skills": [
+          "Studentul elaborează chestionare ghidate pentru obținerea de date primare.",
+          "Studentul prelucrează statistic datele folosind software de specialitate (SPSS, Excel)."
+        ],
+        "responsibility_autonomy": [
+          "Studentul respectă regulile deontologice și protecția datelor în cercetarea subiecților umani."
+        ]
+      }
+    },
+    {
+      "code": "CBMR0401",
+      "name_hu": "Reklámkampányok tervezése",
+      "name_ro": "Planificarea campaniilor publicitare",
+      "name_en": "Advertising Campaign Planning",
+      "credits": 4,
+      "year": 3,
+      "semester": 5,
+      "category": "DS",
+      "course_type": "DOB",
+      "lecture_hours": 2,
+      "seminar_hours": 2,
+      "lab_hours": 0,
+      "project_hours": 0,
+      "exam_type": "E",
+      "learning_outcomes": {
+        "knowledge": [
+          "Studentul cunoaște conceptele de brief creativ, media plan și copywriting.",
+          "Studentul distinge între mijloacele de comunicare ATL și BTL."
+        ],
+        "skills": [
+          "Studentul construiește planuri media eficiente pentru alocarea bugetului de publicitate.",
+          "Studentul evaluează impactul diferitelor abordări publicitare asupra brandului."
+        ],
+        "responsibility_autonomy": [
+          "Studentul conduce proiecte creative de promovare într-un mod organizat și constructiv."
+        ]
+      }
+    },
+    {
+      "code": "CBMR0501",
+      "name_hu": "Szolgáltatások marketingje",
+      "name_ro": "Marketingul serviciilor",
+      "name_en": "Services Marketing",
+      "credits": 4,
+      "year": 3,
+      "semester": 6,
+      "category": "DS",
+      "course_type": "DOB",
+      "lecture_hours": 2,
+      "seminar_hours": 1,
+      "lab_hours": 0,
+      "project_hours": 0,
+      "exam_type": "E",
+      "learning_outcomes": {
+        "knowledge": [
+          "Studentul înțelege caracteristicile distincte ale serviciilor (intangibilitate, inseparabilitate, variabilitate, perisabilitate).",
+          "Studentul identifică componentele modelului extins al mixului de marketing pentru servicii (7P)."
+        ],
+        "skills": [
+          "Studentul propune strategii pentru creșterea calității percepute a serviciilor.",
+          "Studentul elaborează planuri pentru îmbunătățirea experienței clienților (customer journey)."
+        ],
+        "responsibility_autonomy": [
+          "Studentul gândește măsuri autonome pentru transformarea plângerilor clienților în oportunități de fidelizare."
+        ]
+      }
+    }
+  ]
+}
