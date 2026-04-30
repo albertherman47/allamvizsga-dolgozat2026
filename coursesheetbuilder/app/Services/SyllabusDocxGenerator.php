@@ -13,6 +13,9 @@ class SyllabusDocxGenerator
     private PlaceholderResolver $resolver;
     private TemplateProcessor $template;
 
+    /**
+     *
+     */
     public function __construct(CourseSyllabusContent $content, CourseAssignment $assignment)
     {
         $this->content = $content;
@@ -38,7 +41,14 @@ class SyllabusDocxGenerator
     }
 
     /**
-     * Fill all placeholders in the template
+     * Populates a template with dynamically generated content based on placeholders.
+     *
+     * This method processes all sections and their placeholders in the provided template.
+     * It ensures placeholders are ordered correctly and processes special formats
+     * like table rows last to avoid disruption of other variables in the same row.
+     * Finally, any unmatched template variables are cleaned up.
+     *
+     * @throws \Exception If no template is found for the current syllabus.
      */
     private function fillTemplate(): void
     {
@@ -61,11 +71,11 @@ class SyllabusDocxGenerator
             usort($placeholders, function($a, $b) {
                 $isTableA = ($a['output_format'] ?? 'text') === 'table_row' ? 1 : 0;
                 $isTableB = ($b['output_format'] ?? 'text') === 'table_row' ? 1 : 0;
-                
+
                 if ($isTableA !== $isTableB) {
                     return $isTableA <=> $isTableB;
                 }
-                
+
                 return $a['display_order'] <=> $b['display_order'];
             });
 
@@ -82,7 +92,17 @@ class SyllabusDocxGenerator
     }
 
     /**
-     * Fill a single placeholder
+     * Fills a specific placeholder in the template with processed data.
+     *
+     * This method resolves the value of the provided placeholder using a resolver.
+     * It supports replacing placeholders with text values or handling table row formatting
+     * for dynamic content generation. The resolved and formatted value is then sanitized
+     * and set into the corresponding placeholder within the template.
+     *
+     * @param array $placeholder An associative array containing details about the placeholder,
+     *                           including its name and additional formatting options.
+     *
+     * @throws \Exception If any error occurs during value resolution or formatting.
      */
     private function fillPlaceholder(array $placeholder): void
     {
@@ -114,10 +134,17 @@ class SyllabusDocxGenerator
     }
 
     /**
-     * Fill table row for repeaters using cloneRowAndSetValues
-     */
+     * Populates a table template variable in a Word document with data.
+     *
+     * @param string $placeholderName The placeholder name in the template to replace with table data.
+     * @param mixed $items The data to populate in the table. Can be an array of items or a single value.
+     * @param array $config Configuration array containing details about table columns.
+     *
+     * Populates table rows in the template based on the provided data and configuration. If the data is
+     * empty or not*/
     private function fillTableRow(string $placeholderName, mixed $items, array $config): void
     {
+
         $columns = $config['table_columns'] ?? [];
         if (empty($columns)) {
             $this->template->setValue($placeholderName, is_array($items) ? implode(', ', $items) : (string)$items);
@@ -150,13 +177,22 @@ class SyllabusDocxGenerator
     }
 
     /**
-     * Clean value for Word document (remove special characters, handle line breaks)
+     * Cleans and formats a string for use in a Word document.
+     *
+     * This function is designed to sanitize and prepare text so that it can be
+     * safely and correctly inserted into a Word document. It handles decoding
+     * HTML entities, escaping XML characters to prevent DOCX corruption, removing
+     * specific formatting such as bullet points, and replacing newlines with Word-compatible
+     * line breaks.
+     *
+     * @param string $value The input string to be sanitized and formatted.
+     * @return string The sanitized and formatted string ready for use in a Word document.
      */
     private function cleanForWord(string $value): string
     {
         // Decode first just in case there are HTML entities like &nbsp; or &amp; already there
         $value = htmlspecialchars_decode($value, ENT_QUOTES);
-        
+
         // Remove bullet points for simpler display
         $value = str_replace('•', '-', $value);
 
@@ -172,7 +208,10 @@ class SyllabusDocxGenerator
     }
 
     /**
-     * Save the document and return the file path
+     * Saves the generated syllabus document to a designated storage path.
+     *
+     * @return string The file path of the saved document.
+     * @throws \Exception If the document could not be saved or if a required directory cannot be created.
      */
     private function saveDocument(): string
     {

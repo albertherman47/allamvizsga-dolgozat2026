@@ -6,8 +6,22 @@ use Filament\Forms\Components\Repeater;
 use Filament\Forms\Components\Select;
 use Filament\Schemas\Schema;
 
+/**
+ * Oktató-tantárgy hozzárendelés szerkesztő űrlap sémája.
+ *
+ * Egy Repeater mezoőt tartalmaz (max 1 elem), amelyen belül a négy
+ * oktatói szerepet lehet kiosztani: előadó, szemináriumvezető,
+ * laborvezető és projektvezető. Az oktatókat név szerint lehet keresni.
+ */
 class CourseAssignmentForm
 {
+    /**
+     * Konfigürálja a tantárgy-hozzárendelési űrlap sémáját.
+     * Egy Repeater-en belül négy Select mezőt kínál az oktatói szerepek kitöltéséhez.
+     *
+     * @param Schema $schema Az űrlap sémája.
+     * @return Schema A konfigurált séma.
+     */
     public static function configure(Schema $schema): Schema
     {
         return $schema

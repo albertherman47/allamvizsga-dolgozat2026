@@ -7,6 +7,12 @@ use Filament\Schemas\Schema;
 
 class AcademicYearInfolist
 {
+    /**
+     * Configures the schema with specified components.
+     *
+     * @param Schema $schema The schema instance to be configured.
+     * @return Schema The configured schema instance.
+     */
     public static function configure(Schema $schema): Schema
     {
         return $schema

@@ -17,6 +17,16 @@ use Filament\Schemas\Schema;
 use Filament\Support\Icons\Heroicon;
 use Filament\Tables\Table;
 
+/**
+ * Filament adminfelület-resource az oktatók (Teacher) kezeléséhez.
+ *
+ * Az oktató egy User-hez kapcsolódó profil, amely tartalmazza az akadémiai
+ * fokozatot, beosztást, tanszéki hovatartozást és elérhetőségeket.
+ * Csak a super_admin szerepkör látja a navigációban.
+ *
+ * Kapcsolódó modellek: Teacher, User, Department
+ * Navigációs csoport: Users & Access | Ikon: user-group
+ */
 class TeacherResource extends Resource
 {
     protected static ?string $model = Teacher::class;
@@ -63,6 +73,9 @@ class TeacherResource extends Resource
         ];
     }
 
+    /**
+     * Csak super_admin szerepkörű felhasználók számára látható a navigációban.
+     */
     public static function shouldRegisterNavigation(): bool
     {
         $user = auth()->user();

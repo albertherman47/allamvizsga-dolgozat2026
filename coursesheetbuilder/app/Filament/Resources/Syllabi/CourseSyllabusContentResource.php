@@ -643,8 +643,8 @@ class CourseSyllabusContentResource extends Resource
                 BadgeColumn::make('status')
                     ->label('Status')
                     ->colors([
-                        'draft' => 'gray',
-                        'completed' => 'success',
+                        'warning' => 'draft',
+                        'success' => 'completed',
                     ])
                     ->sortable(),
 

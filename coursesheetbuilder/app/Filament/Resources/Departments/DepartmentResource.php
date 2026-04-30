@@ -17,6 +17,16 @@ use Filament\Schemas\Schema;
 use Filament\Support\Icons\Heroicon;
 use Filament\Tables\Table;
 
+/**
+ * Filament adminfelület-resource a tanszékek (Department) kezeléséhez.
+ *
+ * Biztosítja a tanszékek létrehozását, szerkesztését, megtekintését és
+ * listázását. Csak adminisztratív szerepkörű felhasználók (super_admin,
+ * department_admin) érhetik el a navigációban.
+ *
+ * Kapcsolódó modellek: Department
+ * Navigációs csoport: Department & Organization | Ikon: building-office
+ */
 class DepartmentResource extends Resource
 {
     protected static ?string $model = Department::class;
@@ -63,6 +73,9 @@ class DepartmentResource extends Resource
         ];
     }
 
+    /**
+     * Csak super_admin és department_admin szerepkörű felhasználók látják a navigációban.
+     */
     public static function shouldRegisterNavigation(): bool
     {
         $user = auth()->user();

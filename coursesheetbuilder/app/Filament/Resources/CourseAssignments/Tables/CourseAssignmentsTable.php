@@ -9,8 +9,22 @@ use Filament\Tables\Filters\SelectFilter;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 
+/**
+ * Oktató-tantárgy hozzárendelések listázó táblázatának sémája.
+ *
+ * Megjeleníti a tantárgyakat szak, kód, név, félév és hozzárendelt előadó
+ * szerint. Szűrhető szak szerint (program_id). Minden soron szerkesztés
+ * gomb is található ("Tanárok hozzárendelése" címkével).
+ */
 class CourseAssignmentsTable
 {
+    /**
+     * Konfigürálja a tantárgy-hozzárendelés listázó táblázatot.
+     * Tartalmaz program-szűrőt és szerkesztés akciót.
+     *
+     * @param Table $table A táblázat példánya.
+     * @return Table A konfigurált táblázat.
+     */
     public static function configure(Table $table): Table
     {
         return $table

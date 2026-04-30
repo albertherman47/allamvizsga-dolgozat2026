@@ -15,6 +15,16 @@ use Filament\Resources\Resource;
 use Filament\Schemas\Schema;
 use Filament\Tables\Table;
 
+/**
+ * Filament adminfelület-resource a tanévek (AcademicYear) kezeléséhez.
+ *
+ * Csak a "super_admin" szerepkörű felhasználók látják a navigációban
+ * (Settings csoport). Létrehozás, megtekintés, szerkesztés, listázás
+ * műveletek elérhetők (CRUD teljes köre).
+ *
+ * Kapcsolódó modellek: AcademicYear
+ * Navigációs csoport: Settings | Ikon: calendar-days
+ */
 class AcademicYearResource extends Resource
 {
     protected static ?string $model = AcademicYear::class;
@@ -61,6 +71,10 @@ class AcademicYearResource extends Resource
         ];
     }
 
+    /**
+     * Meghatározza, hogy a navigációban megjelenjen-e ez a resource.
+     * Csak a super_admin szerepkörű felhasználók számára látható.
+     */
     public static function shouldRegisterNavigation(): bool
     {
         $user = auth()->user();

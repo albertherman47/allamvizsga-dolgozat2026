@@ -14,6 +14,18 @@ use Filament\Schemas\Schema;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 
+/**
+ * Filament adminfelület-resource az oktató saját tantárgyainak megtekintéséhez.
+ *
+ * Ez a resource kizárólag a "teacher" szerepkörű felhasználóknak jelenik meg
+ * a navigációban (Teaching csoport, 1. helyen). Az oktató csak azokat a
+ * tantárgyakat látja, amelyekhez egy CourseAssignment rekord hozzárendelte
+ * őt (előadó, szemináriumvezető, laborvezető vagy projektfelelős szerepben).
+ *
+ * Kapcsolódó modellek: CurriculumCourse, CourseAssignment, Curriculum, AcademicYear
+ * Navigációs csoport: Teaching | Ikon: academic-cap
+ * Elérhető műveletek: listázás (tanév szűrővel), megtekintés
+ */
 class CurriculumCourseResource extends Resource
 {
     protected static ?string $model = CurriculumCourse::class;
@@ -53,6 +65,12 @@ class CurriculumCourseResource extends Resource
         ];
     }
 
+    /**
+     * Megszűri az lekérdezést az aktuális felhasználó szerepköre alapján.
+     *
+     * - teacher: csak a hozzá rendelt tantárgyakat látja (CourseAssignment alapján)
+     * - department_admin / super_admin: minden tantárgyat lát
+     */
     public static function getEloquentQuery(): Builder
     {
         $query = parent::getEloquentQuery();
@@ -79,6 +97,9 @@ class CurriculumCourseResource extends Resource
         return $query;
     }
 
+    /**
+     * Csak "teacher" szerepkörű felhasználók számára jelenik meg a navigációban.
+     */
     public static function shouldRegisterNavigation(): bool
     {
         $user = auth()->user();

@@ -17,6 +17,16 @@ use Filament\Schemas\Schema;
 use Filament\Support\Icons\Heroicon;
 use Filament\Tables\Table;
 
+/**
+ * Filament adminfelület-resource a rendszer-felhasználók (User) kezeléséhez.
+ *
+ * Kezeli az összes felhasználói fiókot (név, email, jelszó, szerepkör).
+ * Csak a super_admin szerepkör érheti el — a tanárok és staff saját
+ * profiljukat külön felületen módosíthatják.
+ *
+ * Kapcsolódó modellek: User
+ * Navigációs csoport: Users & Access | Ikon: user
+ */
 class UserResource extends Resource
 {
     protected static ?string $model = User::class;
@@ -63,6 +73,9 @@ class UserResource extends Resource
         ];
     }
 
+    /**
+     * Csak super_admin szerepkörű felhasználók számára látható a navigációban.
+     */
     public static function shouldRegisterNavigation(): bool
     {
         $user = auth()->user();

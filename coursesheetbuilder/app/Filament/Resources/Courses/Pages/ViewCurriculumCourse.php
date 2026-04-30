@@ -11,10 +11,23 @@ use Filament\Actions;
 use Filament\Notifications\Notification;
 use Filament\Resources\Pages\ViewRecord;
 
+/**
+ * Egy tantárgy részletes megtekintésének Filament oldalas (ViewRecord).
+ *
+ * A fejlécben egy "Create Syllabus" gomb jelenik meg, amely:
+ * 1. Megkeresi a tantárgyhoz tartozó CourseAssignment rekordokat.
+ * 2. Ellenőrzi, hogy létezik-e aktív SyllabusTemplate az adott tanévhez.
+ * 3. Minden hozzárendeléshez létrehoz egy CourseSyllabusContent rekordot
+ *    (ha még nem létezik), majd átirányít a szerkesztőre.
+ */
 class ViewCurriculumCourse extends ViewRecord
 {
     protected static string $resource = CurriculumCourseResource::class;
 
+    /**
+     * A fejlécben megjelenő akciógombokat adja vissza.
+     * Tartalmazza: Create Syllabus akció + alapértelmezett Edit akció.
+     */
     protected function getHeaderActions(): array
     {
         return [

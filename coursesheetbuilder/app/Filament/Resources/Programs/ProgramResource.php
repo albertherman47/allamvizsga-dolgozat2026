@@ -17,6 +17,16 @@ use Filament\Schemas\Schema;
 use Filament\Support\Icons\Heroicon;
 use Filament\Tables\Table;
 
+/**
+ * Filament adminfelület-resource a szakok (Program) kezeléséhez.
+ *
+ * A szak a tanszékhez (Department) tartozó képzési forma, amelyhez
+ * tantervek (Curriculum) kapcsolódnak. Tartalmazza a szak koordinátorát
+ * és programfelelősét is. CRUD műveletek teljes köre elérhető.
+ *
+ * Kapcsolódó modellek: Program, Department, Teacher
+ * Navigációs csoport: Department & Organization | Ikon: book-open
+ */
 class ProgramResource extends Resource
 {
     protected static ?string $model = Program::class;
@@ -63,6 +73,9 @@ class ProgramResource extends Resource
         ];
     }
 
+    /**
+     * Csak super_admin és department_admin szerepkörű felhasználók látják a navigációban.
+     */
     public static function shouldRegisterNavigation(): bool
     {
         $user = auth()->user();

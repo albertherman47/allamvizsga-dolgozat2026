@@ -8,17 +8,33 @@ use App\Models\Teacher;
 use Filament\Widgets\StatsOverviewWidget as BaseWidget;
 use Filament\Widgets\StatsOverviewWidget\Stat;
 
+/**
+ * Admin áttekintő widget a dashboard-on.
+ *
+ * Csak akkor jelenik meg, ha a bejelentkezett felhasználó admin vagy
+ * sem oktató, sem adminisztratív munkatárs (azaz rendszer-adminisztratór).
+ * Három statisztikát mutat: oktatók száma, szakok száma, tantárgyak száma.
+ */
 class AdminStatsOverview extends BaseWidget
 {
     protected static ?int $sort = 1;
 
+    /**
+     * Meghatározza, hogy ez a widget látható-e az aktuális felhasználó számára.
+     * Admin szerepkörnek vagy olyan felhasználóknak jelenik meg, akik nem oktatók
+     * és nem adminisztratív munkatársak.
+     */
     public static function canView(): bool
     {
-        /** @var \App\Models\User $user */
+        
         $user = auth()->user();
         return $user->hasRole('admin') || (!$user->isTeacher() && !$user->isAdministrativeStaff());
     }
 
+    /**
+     * Az adminnak megjelenitő statisztikai kártyákat adja vissza.
+     * Tartalmazza: oktatók száma, aktiv szakok, összes tantárgy.
+     */
     protected function getStats(): array
     {
         return [

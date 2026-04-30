@@ -15,13 +15,24 @@ use Filament\Schemas\Schema;
 use Filament\Support\Icons\Heroicon;
 use Filament\Tables\Table;
 
+/**
+ * Filament adminfelület-resource az oktató-tantárgy hozzárendelések kezeléséhez.
+ *
+ * Megjeleníti, hogy melyik tantárgyhoz (CurriculumCourse) melyik oktatók
+ * vannak hozzárendelve (előadás, szemérinárium, labor, projekt szerepek szerint).
+ * A modell technikailag a CurriculumCourse, de az átempítés és a form a
+ * CourseAssignment rekordokat kezeli.
+ *
+ * Navigációs láthatóság: super_admin és department_admin szerepkörök.
+ * Elérhető műveletek: listázás, szerkesztés.
+ */
 class CourseAssignmentResource extends Resource
 {
     protected static ?string $model = CurriculumCourse::class;
 
-    protected static ?string $navigationLabel = 'Tantárgyfelosztás';
-    protected static ?string $modelLabel = 'Tantárgyfelosztás';
-    protected static ?string $pluralModelLabel = 'Tantárgyfelosztások';
+    protected static ?string $navigationLabel = 'Course Assignments';
+    protected static ?string $modelLabel = 'Course Assignment';
+    protected static ?string $pluralModelLabel = 'Course Assignments';
 
     protected static string|BackedEnum|null $navigationIcon = 'heroicon-o-users';
 
@@ -50,6 +61,9 @@ class CourseAssignmentResource extends Resource
         ];
     }
 
+    /**
+     * Csak super_admin és department_admin szerepkörű felhasználók látják a menüben.
+     */
     public static function shouldRegisterNavigation(): bool
     {
         $user = auth()->user();

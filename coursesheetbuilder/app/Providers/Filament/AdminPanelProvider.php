@@ -27,9 +27,10 @@ class AdminPanelProvider extends PanelProvider
             ->id('admin')
             ->path('admin')
             ->login()
+            ->brandName('CourseSheet Builder')
             ->colors([
-                'primary' => Color::hex('#006633'),
-                'gray' => Color::Slate,
+                'primary' => Color::hex('#015301ff'),
+                'gray' => Color::Gray,
             ])
             ->font('Outfit', url: 'https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap')
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
@@ -39,8 +40,8 @@ class AdminPanelProvider extends PanelProvider
             ])
             ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\\Filament\\Widgets')
             ->widgets([
-                Widgets\AccountWidget::class,
-                Widgets\FilamentInfoWidget::class,
+                // Widgets\AccountWidget::class,
+                // Widgets\FilamentInfoWidget::class,
             ])
             ->middleware([
                 EncryptCookies::class,
