@@ -31,11 +31,11 @@ class AcademicYearResource extends Resource
 
     protected static string|BackedEnum|null $navigationIcon = 'heroicon-o-calendar-days';
 
-    protected static ?string $navigationLabel = 'Academic Years';
+    protected static ?string $navigationLabel = 'Tanévek';
 
-    protected static \UnitEnum|string|null $navigationGroup = 'Settings';
+    protected static \UnitEnum|string|null $navigationGroup = 'Intézmény';
 
-    protected static ?int $navigationSort = 1;
+    protected static ?int $navigationSort = 3;
 
     protected static ?string $recordTitleAttribute = 'year_code';
 

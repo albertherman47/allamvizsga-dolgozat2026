@@ -33,9 +33,9 @@ class TeacherResource extends Resource
 
     protected static string|BackedEnum|null $navigationIcon = 'heroicon-o-user-group';
 
-    protected static ?string $navigationLabel = 'Teachers';
+    protected static ?string $navigationLabel = 'Tanárok';
 
-    protected static \UnitEnum|string|null $navigationGroup = 'Users & Access';
+    protected static \UnitEnum|string|null $navigationGroup = 'Tanárok';
 
     protected static ?int $navigationSort = 2;
 

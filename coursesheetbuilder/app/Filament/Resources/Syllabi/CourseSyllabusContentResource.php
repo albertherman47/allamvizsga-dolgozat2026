@@ -35,9 +35,9 @@ class CourseSyllabusContentResource extends Resource
 
     protected static string|BackedEnum|null $navigationIcon = 'heroicon-o-document-duplicate';
 
-    protected static ?string $navigationLabel = 'Course Syllabi';
+    protected static ?string $navigationLabel = 'Tantárgy adatlapok';
 
-    protected static \UnitEnum|string|null $navigationGroup = 'Teaching';
+    protected static \UnitEnum|string|null $navigationGroup = 'Tantárgyi adatlap';
 
     protected static ?int $navigationSort = 2;
 
@@ -635,25 +635,38 @@ class CourseSyllabusContentResource extends Resource
     {
         return $table
             ->columns([
-                TextColumn::make('courseAssignment.curriculumCourse.course_name_ro')
-                    ->label('Course')
+                TextColumn::make('courseAssignment.curriculumCourse.curriculum.academicYear.year_code')
+                    ->label('Tanév')
+                    ->sortable(),
+
+                TextColumn::make('courseAssignment.curriculumCourse.curriculum.program.name_hu')
+                    ->label('Szak')
+                    ->sortable(),
+
+               
+                
+                TextColumn::make('courseAssignment.curriculumCourse.course_name_hu')
+                    ->label('Tantárgy neve')
                     ->searchable()
                     ->sortable(),
 
+                 
+
                 BadgeColumn::make('status')
-                    ->label('Status')
+                    ->label('Státusz')
                     ->colors([
                         'warning' => 'draft',
-                        'success' => 'completed',
+                        'success' => 'approved',
                     ])
+                    ->formatStateUsing(function ($state) {
+                        return $state === 'draft' ? 'Vázlat' : 'Jóváhagyva';
+                    })
                     ->sortable(),
 
-                TextColumn::make('version')
-                    ->label('Version')
-                    ->sortable(),
+                
 
                 TextColumn::make('updated_at')
-                    ->label('Updated')
+                    ->label('Utolsó módosítás')
                     ->dateTime()
                     ->sortable(),
             ])
@@ -696,7 +709,7 @@ class CourseSyllabusContentResource extends Resource
         $user = auth()->user();
 
         if ($user && $user->hasRole('teacher')) {
-            $teacher = $user->teacher; // Assuming User has a 'teacher' relation
+            $teacher = $user->teacher; 
 
             if ($teacher) {
                 $query->whereHas('courseAssignment', function ($q) use ($teacher) {

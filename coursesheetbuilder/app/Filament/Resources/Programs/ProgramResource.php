@@ -33,11 +33,11 @@ class ProgramResource extends Resource
 
     protected static string|BackedEnum|null $navigationIcon = 'heroicon-o-book-open';
 
-    protected static ?string $navigationLabel = 'Programs';
+    protected static ?string $navigationLabel = 'Szakok';
 
-    protected static \UnitEnum|string|null $navigationGroup = 'Department & Organization';
+    protected static \UnitEnum|string|null $navigationGroup = 'Intézmény';
 
-    protected static ?int $navigationSort = 2;
+    protected static ?int $navigationSort = 3;
 
     protected static ?string $recordTitleAttribute = 'name_hu';
 

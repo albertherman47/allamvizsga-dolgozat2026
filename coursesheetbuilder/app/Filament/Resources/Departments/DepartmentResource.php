@@ -33,9 +33,9 @@ class DepartmentResource extends Resource
 
     protected static string|BackedEnum|null $navigationIcon = 'heroicon-o-building-office';
 
-    protected static ?string $navigationLabel = 'Departments';
+    protected static ?string $navigationLabel = 'Tanszékek';
 
-    protected static \UnitEnum|string|null $navigationGroup = 'Department & Organization';
+    protected static \UnitEnum|string|null $navigationGroup = 'Intézmény';
 
     protected static ?int $navigationSort = 1;
 

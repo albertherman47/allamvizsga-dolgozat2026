@@ -32,11 +32,11 @@ class CurriculumCourseResource extends Resource
 
     protected static string|BackedEnum|null $navigationIcon = 'heroicon-o-academic-cap';
 
-    protected static ?string $navigationLabel = 'My Courses';
+    protected static ?string $navigationLabel = 'Saját Tantárgyaim';
 
-    protected static \UnitEnum|string|null $navigationGroup = 'Teaching';
+    protected static \UnitEnum|string|null $navigationGroup = 'Oktatás és Tantervek';
 
-    protected static ?int $navigationSort = 1;
+    protected static ?int $navigationSort = 2;
 
     protected static ?string $recordTitleAttribute = 'course_name_hu';
 

@@ -32,7 +32,7 @@ class ViewCurriculumCourse extends ViewRecord
     {
         return [
             Actions\Action::make('create_syllabus')
-                ->label('Create Syllabus')
+                ->label('Adatlapok Létrehozása')
                 ->icon('heroicon-o-document-plus')
                 ->color('success')
                 ->action(function () {
@@ -42,8 +42,8 @@ class ViewCurriculumCourse extends ViewRecord
                     if ($assignments->isEmpty()) {
                         Notification::make()
                             ->warning()
-                            ->title('No course assignments found')
-                            ->body('No course assignments found for this course.')
+                            ->title('Nincs Tantárgy Hozzárendelés')
+                            ->body('Nincs Tantárgy Hozzárendelés.')
                             ->send();
                         return;
                     }
@@ -57,8 +57,8 @@ class ViewCurriculumCourse extends ViewRecord
                     if (!$template) {
                         Notification::make()
                             ->danger()
-                            ->title('No template found')
-                            ->body('No active syllabus template found for this academic year.')
+                            ->title('Nincs aktív sablon')
+                            ->body('A megadott tanévben nincs aktív adatlap sablon.')
                             ->send();
                         return;
                     }
@@ -87,8 +87,8 @@ class ViewCurriculumCourse extends ViewRecord
                     if ($created > 0) {
                         Notification::make()
                             ->success()
-                            ->title('Syllabus created')
-                            ->body("Created $created syllabus record(s). Redirecting to edit...")
+                            ->title('A tantárgyi adatlap sikeresen létrehozva.')
+                            ->body("Létrehozva $created tantárgyi adatlap. Átirányítás a szerkesztőre...")
                             ->send();
                         // Redirect to edit the first created syllabus
                         $syllabusContent = CourseSyllabusContent::where('course_assignment_id', $assignments->first()->id)->first();
@@ -96,8 +96,8 @@ class ViewCurriculumCourse extends ViewRecord
                     } else {
                         Notification::make()
                             ->info()
-                            ->title('Syllabus exists')
-                            ->body('Syllabus already exists for all assignments.')
+                            ->title('Már létezik a tantárgyi adatlap.')
+                            ->body('A tantárgyi adatlap már létezik a megadott tanévben.')
                             ->send();
                     }
                 }),

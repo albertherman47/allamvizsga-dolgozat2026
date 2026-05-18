@@ -30,9 +30,12 @@ class CourseAssignmentResource extends Resource
 {
     protected static ?string $model = CurriculumCourse::class;
 
-    protected static ?string $navigationLabel = 'Course Assignments';
-    protected static ?string $modelLabel = 'Course Assignment';
-    protected static ?string $pluralModelLabel = 'Course Assignments';
+    protected static ?string $navigationLabel = 'Feladatkiosztás';
+    protected static ?string $modelLabel = 'Feladatkiosztás';
+    protected static ?string $pluralModelLabel = 'Feladatkiosztások';
+
+    protected static \UnitEnum|string|null $navigationGroup = 'Oktatás és Tantervek';
+    protected static ?int $navigationSort = 3;
 
     protected static string|BackedEnum|null $navigationIcon = 'heroicon-o-users';
 

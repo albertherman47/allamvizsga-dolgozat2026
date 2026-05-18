@@ -26,9 +26,9 @@ class SyllabusTemplateResource extends Resource
 
     protected static string|BackedEnum|null $navigationIcon = 'heroicon-o-document-text';
 
-    protected static ?string $navigationLabel = 'Syllabus Templates';
+    protected static ?string $navigationLabel = 'Tantárgyi adatlap sablonok';
 
-    protected static \UnitEnum|string|null $navigationGroup = 'Syllabi';
+    protected static \UnitEnum|string|null $navigationGroup = 'Tantárgyi adatlap';
 
     protected static ?int $navigationSort = 1;
 
@@ -44,7 +44,7 @@ class SyllabusTemplateResource extends Resource
         return $schema
             ->components([
                 TextInput::make('name')
-                    ->label('Template Name')
+                    ->label('Sablon neve')
                     ->required()
                     ->maxLength(100)
                     ->placeholder('e.g., Fișa disciplinei 2025/26'),

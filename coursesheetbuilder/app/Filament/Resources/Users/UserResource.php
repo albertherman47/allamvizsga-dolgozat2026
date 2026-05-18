@@ -33,9 +33,9 @@ class UserResource extends Resource
 
     protected static string|BackedEnum|null $navigationIcon = 'heroicon-o-user';
 
-    protected static ?string $navigationLabel = 'Users';
+    protected static ?string $navigationLabel = 'Felhasználók';
 
-    protected static \UnitEnum|string|null $navigationGroup = 'Users & Access';
+    protected static \UnitEnum|string|null $navigationGroup = 'Felhasználók';
 
     protected static ?int $navigationSort = 1;
 

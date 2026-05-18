@@ -29,8 +29,8 @@ class EditCourseSyllabusContent extends EditRecord
     {
         return [
             Actions\Action::make('download_syllabus')
-                ->label('Download Syllabus')
-                ->icon('heroicon-o-arrow-down-tray')
+                ->label('Tantárgyi adatlap letöltése')
+                ->icon('heroicon-o-arrow-down-tray')    
                 ->color('success')
                 ->action(function () {
                     try {
@@ -39,8 +39,8 @@ class EditCourseSyllabusContent extends EditRecord
 
                         Notification::make()
                             ->success()
-                            ->title('Syllabus Generated')
-                            ->body('Your syllabus has been generated successfully.')
+                            ->title('Tantárgyi adatlap sikeresen létrehozva.')
+                            ->body('Tantárgyi adatlap letöltése')
                             ->send();
 
                         // Return file download
@@ -48,7 +48,7 @@ class EditCourseSyllabusContent extends EditRecord
                     } catch (\Exception $e) {
                         Notification::make()
                             ->danger()
-                            ->title('Error Generating Syllabus')
+                            ->title('Hiba történt a tantárgyi adatlap létrehozása közben.')
                             ->body($e->getMessage())
                             ->send();
                     }
